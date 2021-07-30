@@ -1,5 +1,5 @@
 <template>
-  <div>HHH</div>
+  <footer class="footer">@</footer>
 </template>
 
 <script>
