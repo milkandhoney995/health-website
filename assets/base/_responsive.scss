@@ -1,0 +1,33 @@
+// sm:320px~
+// sp:~720px
+// tblet:721~1000px
+// pc: 1001~1440px
+// largepc:1441px~
+
+@mixin respond($breakpoint) {
+  @if $breakpoint==sm {
+    @media only screen and (min-width: 320px) {
+      @content;
+    }
+  }
+  @if $breakpoint==sp {
+    @media only screen and (max-width: 719px) {
+      @content;
+    }
+  }
+  @if $breakpoint==tablet {
+    @media only screen and (min-width: 721px) and (max-width: 1000px) {
+      @content;
+    }
+  }
+  @if $breakpoint==pc {
+    @media only screen and (min-width: 1001px) and (max-width: 1440px) {
+      @content;
+    }
+  }
+  @if $breakpoint==lg {
+    @media only screen and (min-width: 1441px) {
+      @content;
+    }
+  }
+}

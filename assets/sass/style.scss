@@ -1,0 +1,10 @@
+@charset 'UTF-8';
+
+// base
+@import 'base/variables'; //変数
+@import 'base/responsive'; //responsive breakpoint
+@import 'base/general';
+
+// layout: nav, tab, header, etc
+@import 'layout/flexbox'; //flex
+@import 'layout/gNav'; //global navigation
