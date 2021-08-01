@@ -18,13 +18,16 @@
     "@nuxtjs/pwa": "^3.3.5",
     "core-js": "^3.15.1",
     "firebase": "^8.8.1",
+    "node-sass": "^4.14.1",
     "nuxt": "^2.15.7",
+    "sass-loader": "^10.2.0",
     "stylelint-scss": "^3.20.1"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.14.7",
     "@nuxtjs/eslint-config": "^6.0.1",
     "@nuxtjs/eslint-module": "^3.0.2",
+    "@nuxtjs/style-resources": "^1.2.0",
     "@nuxtjs/stylelint-module": "^4.0.0",
     "eslint": "^7.29.0",
     "eslint-config-prettier": "^8.3.0",
