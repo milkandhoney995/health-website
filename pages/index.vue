@@ -1,7 +1,12 @@
 <template>
-  <div>HHH</div>
+  <Header />
 </template>
 
 <script>
-export default {}
+import Header from '@/components/Header'
+export default {
+  components: {
+    Header,
+  },
+}
 </script>

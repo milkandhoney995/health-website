@@ -1,12 +1,12 @@
 <template>
-  <div>home</div>
+  <Header />
 </template>
 
 <script>
-// import Footer from '@/components/Footer.vue'
+import Header from '@/components/Header'
 export default {
   components: {
-    // Footer,
+    Header,
   },
 }
 </script>
