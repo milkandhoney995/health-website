@@ -5,10 +5,10 @@
 }
 
 // SP
-// @include respond(sp) {
-//   .headerNav {
-//     &__item {
-//       display: flex;
-//     }
-//   }
-// }
+@include respond(sp) {
+  .headerNav {
+    &__item {
+      display: flex;
+    }
+  }
+}
