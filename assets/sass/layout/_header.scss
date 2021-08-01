@@ -1,0 +1,35 @@
+.header__pc__fix {
+  height: 0;
+  left: 0;
+  position: fixed;
+  text-align: right;
+  top: 60px;
+  width: 100%;
+  z-index: 3000;
+}
+.menu {
+  float: right;
+  font-size: 0;
+  letter-spacing: 0;
+}
+.menu__pc {
+  color: $clr-paragraph;
+  display: inline-block;
+  font-size: 1.1rem;
+  letter-spacing: 0.1em;
+  line-height: 18px;
+  padding: 0 2px 2px;
+}
+
+.menu__alignment {
+  display: inline-block;
+  vertical-align: middle;
+}
+.menu__item {
+  color: $clr-paragraph;
+  display: inline-block;
+  font-size: 1.1rem;
+  letter-spacing: 0.1em;
+  line-height: 18px;
+  padding: 0 2px 2px;
+}
