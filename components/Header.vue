@@ -1,8 +1,21 @@
 <template>
   <header>
-    <div class="pcHeader__wrap">
-      <div class="flexbox"></div>
-      <nav class="flexbox headerNav"></nav>
+    <div class="header__pc__fix">
+      <div class="center">
+        <nav class="menu">
+          <ul class="menu__pc menu__alignment">
+            <li>ABOUT</li>
+            <li>SERVICE</li>
+            <li>BLOG</li>
+            <li>RECIPE</li>
+            <li>CONTACT</li>
+          </ul>
+          <ul class="sns__pc menu__alignment">
+            <li>facebook</li>
+            <li>Instagram</li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
 </template>
