@@ -37,24 +37,26 @@ export default {
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
     '@nuxtjs/firebase',
-    {
-      config: {
-        apiKey: '<apiKey>',
-        authDomain: '<authDomain>',
-        projectId: '<projectId>',
-        storageBucket: '<storageBucket>',
-        messagingSenderId: '<messagingSenderId>',
-        appId: '<appId>',
-        measurementId: '<measurementId>',
-      },
-      services: {
-        firestore: true,
-        storage: true,
-        database: true,
-      },
-    },
   ],
-
+  /*
+   ** Firebase Configuration
+   */
+  firebase: {
+    config: {
+      apiKey: '<apiKey>',
+      authDomain: '<authDomain>',
+      projectId: '<projectId>',
+      storageBucket: '<storageBucket>',
+      messagingSenderId: '<messagingSenderId>',
+      appId: '<appId>',
+      measurementId: '<measurementId>',
+    },
+    services: {
+      firestore: true,
+      storage: true,
+      database: true,
+    },
+  },
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
 

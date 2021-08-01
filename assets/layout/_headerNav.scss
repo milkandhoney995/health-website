@@ -1,0 +1,14 @@
+.headerNav {
+  &__item {
+    position: relative;
+  }
+}
+
+// SP
+// @include respond(sp) {
+//   .headerNav {
+//     &__item {
+//       display: flex;
+//     }
+//   }
+// }

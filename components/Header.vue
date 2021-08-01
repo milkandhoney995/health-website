@@ -2,7 +2,7 @@
   <header>
     <div class="pcHeader__wrap">
       <div class="flexbox"></div>
-      <nav class="flexbox"></nav>
+      <nav class="flexbox headerNav"></nav>
     </div>
   </header>
 </template>
