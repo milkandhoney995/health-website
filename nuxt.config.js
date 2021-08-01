@@ -12,7 +12,11 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ['~/assets/sass/style.scss'],
+  css: [
+    '~/assets/sass/style.scss',
+    '~/assets/sass/layout/_flexbox.scss',
+    '~/assets/sass/layout/_header.scss',
+  ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
