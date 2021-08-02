@@ -1,35 +1,102 @@
 <template>
   <header>
-    <div class="header__pc__fix">
+    <!-- PC -->
+    <div class="header__fix__pc show__pc">
       <div class="center">
         <nav class="menu">
-          <ul class="menu__pc menu__alignment flex">
-            <li>
-              <a href="" class="link__fade menu__item">ABOUT</a>
+          <ul class="menu__alignment flex">
+            <li class="menu__item">
+              <a href="" class="link__fade menu__link">ABOUT</a>
             </li>
-            <li>
-              <a href="" class="link__fade menu__item">SERVICE</a>
+            <li class="menu__item">
+              <a href="" class="link__fade menu__link">SERVICE</a>
             </li>
-            <li>
-              <a href="" class="link__fade menu__item">BLOG</a>
+            <li class="menu__item">
+              <a href="" class="link__fade menu__link">BLOG</a>
             </li>
-            <li>
-              <a href="" class="link__fade menu__item">RECIPE</a>
+            <li class="menu__item">
+              <a href="" class="link__fade menu__link">RECIPE</a>
             </li>
-            <li>
-              <a href="" class="link__fade menu__item">CONTACT</a>
+            <li class="menu__item">
+              <a href="" class="link__fade menu__link">CONTACT</a>
             </li>
           </ul>
           <ul class="sns__pc menu__alignment">
-            <li>facebook</li>
-            <li>Instagram</li>
+            <li class="menu__item">facebook</li>
+            <li class="menu__item">Instagram</li>
           </ul>
         </nav>
       </div>
     </div>
+    <!-- SP -->
+    <!-- <div class="header__fix__sp">
+      <div class="center">
+        <div class="logo">
+          <a>
+            <h1>UTANO HARADA</h1>
+          </a>
+        </div>
+        <div class="btn">
+          <div class="hamburger__btn" @click="ActiveBtn = !ActiveBtn">
+            <span
+              class="hamburger__item"
+              :class="{ btn_line01: ActiveBtn }"
+            ></span>
+            <span
+              class="hamburger__item"
+              :class="{ btn_line02: ActiveBtn }"
+            ></span>
+            <span
+              class="hamburger__item"
+              :class="{ btn_line03: ActiveBtn }"
+            ></span>
+          </div>
+        </div>
+
+        <transition name="menu">
+          <div class="wrapper">
+            <div class="box__top">
+                <nav v-show="ActiveBtn" class="menu">
+                  <ul class="menu__wrap menu__alignment flex">
+                    <li class="menu__item">
+                      <a href="" class="link__fade menu__link">ABOUT</a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="" class="link__fade menu__link">SERVICE</a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="" class="link__fade menu__link">BLOG</a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="" class="link__fade menu__link">RECIPE</a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="" class="link__fade menu__link">CONTACT</a>
+                    </li>
+                  </ul>
+                </nav>
+                <div class="box__btm">
+                  <ul class="sns__pc menu__alignment">
+                    <li class="menu__item">facebook</li>
+                    <li class="menu__item">Instagram</li>
+                  </ul>
+                </div>
+                </div>
+            </div>
+          </div>
+        </transition>
+      </div>
+    </div> -->
   </header>
 </template>
 
 <script>
-export default {}
+export default {
+  name: 'Header',
+  data() {
+    return {
+      ActiveBtn: false,
+    }
+  },
+}
 </script>

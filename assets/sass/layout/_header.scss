@@ -1,4 +1,4 @@
-.header__pc__fix {
+.header__fix__pc {
   height: 0;
   left: 0;
   position: fixed;
@@ -7,12 +7,36 @@
   width: 100%;
   z-index: 3000;
 }
+.header__fix__sp {
+  @include respond(sp) {
+    left: 0;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+}
 .menu {
   float: right;
   font-size: 0;
   letter-spacing: 0;
 }
-.menu__pc {
+.menu__alignment {
+  display: inline-block;
+  vertical-align: middle;
+}
+.sns__pc {
+  margin-left: 30px;
+}
+.menu__item {
+  display: inline-block;
+  vertical-align: middle;
+}
+li.menu__item + li.menu__item {
+  margin-left: 15px;
+}
+.menu__link {
   color: $clr-paragraph;
   display: inline-block;
   font-size: 1.1rem;
@@ -21,15 +45,90 @@
   padding: 0 2px 2px;
 }
 
-.menu__alignment {
-  display: inline-block;
-  vertical-align: middle;
+// SP
+// .header__sp__menu {
+//   background-color: #969696;
+//   height: 100%;
+//   opacity: 0;
+//   overflow-y: scroll;
+//   -webkit-overflow-scrolling: touch;
+//   -moz-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+//   -o-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+//   -webkit-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+//   transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+//   visibility: hidden;
+//   z-index: 5000;
+// }
+.wrapper {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  min-height: 100%;
+  padding: 100px 0 200px;
+  position: relative;
 }
-.menu__item {
-  color: $clr-paragraph;
-  display: inline-block;
-  font-size: 1.1rem;
-  letter-spacing: 0.1em;
-  line-height: 18px;
-  padding: 0 2px 2px;
+// sp:menuを開くボタン
+.hamburger__btn {
+  height: 100%;
+  position: relative;
+  width: 100%;
 }
+.hamburger__btn span {
+  background-color: $clr-white;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+.hamburger__item:nth-of-type(1) {
+  top: 0;
+  transition: 0.4s ease;
+}
+.hamburger__item:nth-of-type(2) {
+  top: 9px;
+  transition: 0.4s ease;
+}
+.hamburger__item:nth-of-type(3) {
+  bottom: 0;
+  transition: 0.4s ease;
+}
+.btn_line01 {
+  transform: translateY(10px) rotate(-45deg);
+  transition: 0.4s ease;
+}
+.btn_line02 {
+  transition: 0.4s ease;
+  opacity: 0;
+}
+.btn_line03 {
+  transform: translateY(-10px) rotate(45deg);
+  transition: 0.4s ease;
+}
+// sp:menu項目
+.box__top {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.box__btm {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+// sp:menuを閉じるボタン
+// .hamburger__close:nth-of-type(1) {
+//   top: 0;
+//   -moz-transform: translateY(9px) rotate(45deg);
+//   -ms-transform: translateY(9px) rotate(45deg);
+//   -webkit-transform: translateY(9px) rotate(45deg);
+//   transform: translateY(9px) rotate(45deg);
+// }
+// .hamburger__close:nth-of-type(2) {
+//   bottom: 0;
+//   -moz-transform: translateY(-9px) rotate(-45deg);
+//   -ms-transform: translateY(-9px) rotate(-45deg);
+//   -webkit-transform: translateY(-9px) rotate(-45deg);
+//   transform: translateY(-9px) rotate(-45deg);
+// }
