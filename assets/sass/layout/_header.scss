@@ -26,13 +26,15 @@
   display: inline-block;
   vertical-align: middle;
 }
-.sns__pc {
-  margin-left: 30px;
-  color: black;
-}
 .menu__item {
   display: inline-block;
   vertical-align: middle;
+  @include respond(sp) {
+    display: list-item;
+    &__sns {
+      display: inline-block;
+    }
+  }
 }
 li.menu__item + li.menu__item {
   margin-left: 15px;
@@ -45,21 +47,6 @@ li.menu__item + li.menu__item {
   line-height: 18px;
   padding: 0 2px 2px;
 }
-
-// SP
-// .header__sp__menu {
-//   background-color: #969696;
-//   height: 100%;
-//   opacity: 0;
-//   overflow-y: scroll;
-//   -webkit-overflow-scrolling: touch;
-//   -moz-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-//   -o-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-//   -webkit-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-//   transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-//   visibility: hidden;
-//   z-index: 5000;
-// }
 .wrapper {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
