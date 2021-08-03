@@ -54,11 +54,13 @@ a:hover {
   }
 }
 .show__pc {
-  @include respond(pc) {
+  display: block;
+  @include respond(sp) {
     display: none;
   }
 }
-.show_sp {
+.show__sp {
+  display: none;
   @include respond(sp) {
     display: block;
   }
@@ -71,5 +73,5 @@ a:hover {
   font-size: 3rem;
   letter-spacing: 0.1em;
   line-height: 70px;
-  padding: 0 10px;
+  padding: 0 5px;
 }
