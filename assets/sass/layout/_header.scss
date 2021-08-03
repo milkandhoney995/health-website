@@ -8,14 +8,14 @@
   z-index: 3000;
 }
 .header__fix__sp {
-  @include respond(sp) {
-    left: 0;
-    position: fixed;
-    text-align: center;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-  }
+  // @include respond(sp) {
+  left: 0;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  // }
 }
 .menu {
   float: right;
@@ -28,6 +28,7 @@
 }
 .sns__pc {
   margin-left: 30px;
+  color: black;
 }
 .menu__item {
   display: inline-block;
@@ -73,12 +74,15 @@ li.menu__item + li.menu__item {
   position: relative;
   width: 100%;
 }
-.hamburger__btn span {
-  background-color: $clr-white;
-  height: 2px;
+.hamburger__item {
+  background-color: $clr-paragraph;
+  // height: 2px;
   left: 0;
   position: absolute;
-  width: 100%;
+  width: 45px;
+  height: 2px;
+  // background: $clr-paragraph;
+  text-align: center;
 }
 .hamburger__item:nth-of-type(1) {
   top: 0;

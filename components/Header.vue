@@ -1,7 +1,7 @@
 <template>
   <header>
     <!-- PC -->
-    <div class="header__fix__pc show__pc">
+    <!-- <div class="header__fix__pc show__pc">
       <div class="center">
         <nav class="menu">
           <ul class="menu__alignment flex">
@@ -21,15 +21,15 @@
               <a href="" class="link__fade menu__link">CONTACT</a>
             </li>
           </ul>
-          <ul class="sns__pc menu__alignment">
+          <ul class="sns__pc menu__alignment flex">
             <li class="menu__item">facebook</li>
             <li class="menu__item">Instagram</li>
           </ul>
         </nav>
       </div>
-    </div>
+    </div> -->
     <!-- SP -->
-    <!-- <div class="header__fix__sp">
+    <div class="header__fix__sp">
       <div class="center">
         <div class="logo">
           <a>
@@ -53,40 +53,46 @@
           </div>
         </div>
 
-        <transition name="menu">
+        <transition name="hamburger__menu">
           <div class="wrapper">
-            <div class="box__top">
-                <nav v-show="ActiveBtn" class="menu">
-                  <ul class="menu__wrap menu__alignment flex">
-                    <li class="menu__item">
-                      <a href="" class="link__fade menu__link">ABOUT</a>
-                    </li>
-                    <li class="menu__item">
-                      <a href="" class="link__fade menu__link">SERVICE</a>
-                    </li>
-                    <li class="menu__item">
-                      <a href="" class="link__fade menu__link">BLOG</a>
-                    </li>
-                    <li class="menu__item">
-                      <a href="" class="link__fade menu__link">RECIPE</a>
-                    </li>
-                    <li class="menu__item">
-                      <a href="" class="link__fade menu__link">CONTACT</a>
-                    </li>
-                  </ul>
-                </nav>
-                <div class="box__btm">
-                  <ul class="sns__pc menu__alignment">
-                    <li class="menu__item">facebook</li>
-                    <li class="menu__item">Instagram</li>
-                  </ul>
+            <div class="center">
+              <div class="box__top">
+                <div class="logo">
+                  <a>
+                    <h1>UTANO HARADA</h1>
+                  </a>
                 </div>
-                </div>
+              </div>
+              <nav v-show="ActiveBtn" class="menu">
+                <ul class="menu__wrap menu__alignment flex">
+                  <li class="menu__item">
+                    <a href="" class="link__fade menu__link">ABOUT</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="" class="link__fade menu__link">SERVICE</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="" class="link__fade menu__link">BLOG</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="" class="link__fade menu__link">RECIPE</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="" class="link__fade menu__link">CONTACT</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="box__btm">
+                <ul class="sns__pc menu__alignment">
+                  <li class="menu__item">facebook</li>
+                  <li class="menu__item">Instagram</li>
+                </ul>
+              </div>
             </div>
           </div>
         </transition>
       </div>
-    </div> -->
+    </div>
   </header>
 </template>
 
