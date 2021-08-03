@@ -96,16 +96,16 @@ li.menu__item + li.menu__item {
   bottom: 0;
   transition: 0.4s ease;
 }
-.btn_line01 {
-  transform: translateY(10px) rotate(-45deg);
+.item__change01 {
+  transform: translateY(10px) rotate(45deg);
   transition: 0.4s ease;
 }
-.btn_line02 {
+.item__change02 {
   transition: 0.4s ease;
   opacity: 0;
 }
-.btn_line03 {
-  transform: translateY(-10px) rotate(45deg);
+.item__change03 {
+  transform: translateY(-10px) rotate(-45deg);
   transition: 0.4s ease;
 }
 // sp:menu項目
@@ -121,18 +121,3 @@ li.menu__item + li.menu__item {
   position: absolute;
   width: 100%;
 }
-// sp:menuを閉じるボタン
-// .hamburger__close:nth-of-type(1) {
-//   top: 0;
-//   -moz-transform: translateY(9px) rotate(45deg);
-//   -ms-transform: translateY(9px) rotate(45deg);
-//   -webkit-transform: translateY(9px) rotate(45deg);
-//   transform: translateY(9px) rotate(45deg);
-// }
-// .hamburger__close:nth-of-type(2) {
-//   bottom: 0;
-//   -moz-transform: translateY(-9px) rotate(-45deg);
-//   -ms-transform: translateY(-9px) rotate(-45deg);
-//   -webkit-transform: translateY(-9px) rotate(-45deg);
-//   transform: translateY(-9px) rotate(-45deg);
-// }
