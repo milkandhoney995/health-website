@@ -57,6 +57,7 @@ a:hover {
   box-sizing: border-box;
   margin: 0 auto;
   position: relative;
+  text-align: center;
   // debug
   // background-color: $clr-white;
   @include respond(sp) {
@@ -122,10 +123,7 @@ a:hover {
   }
 }
 
-// main
-.main {
-  height: 300px;
-}
+// 各セクション
 .section {
   @include respond(sp) {
     padding: 200px 0 20px;

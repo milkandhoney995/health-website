@@ -22,3 +22,13 @@
     display: block;
   }
 }
+.mainVideo {
+  padding: 95px 0 0;
+  @include respond(sp) {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    min-height: calc(100vh - 200px);
+    padding: 100px 0 0;
+  }
+}

@@ -1,4 +1,5 @@
 .header__fix__pc {
+  padding-top: 15px;
   height: 0;
   left: 0;
   position: fixed;
@@ -9,6 +10,7 @@
 }
 .header__fix__sp {
   // @include respond(sp) {
+  padding-top: 50px;
   left: 0;
   position: fixed;
   text-align: center;
@@ -18,9 +20,12 @@
   // }
 }
 .menu {
-  float: inherit;
+  float: right;
   font-size: 0;
   letter-spacing: 0;
+  @include respond(sp) {
+    float: inherit;
+  }
 }
 .menu__alignment {
   display: inline-block;
