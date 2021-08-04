@@ -88,3 +88,36 @@ a:hover {
   line-height: 70px;
   padding: 0 5px;
 }
+// transform
+.rotated {
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.copyright {
+  letter-spacing: 0.12em;
+  line-height: 1em;
+  color: $clr-paragraph;
+  font-size: 1.3rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -moz-transform-origin: right top;
+  -ms-transform-origin: right top;
+  -webkit-transform-origin: right top;
+  transform-origin: right top;
+  @include respond(sp) {
+    font-size: 2rem;
+    letter-spacing: 0.12em;
+    line-height: 1em;
+    padding: 30px 0 60px;
+  }
+}
+
+// main
+.container {
+  // debug
+  background-color: khaki;
+  height: 300px;
+}

@@ -8,11 +8,11 @@
 // largepc:1441px~
 
 @mixin respond($breakpoint) {
-  @if $breakpoint==sm {
-    @media only screen and (min-width: 320px) {
-      @content;
-    }
-  }
+  // @if $breakpoint==sm {
+  //   @media only screen and (min-width: 320px) {
+  //     @content;
+  //   }
+  // }
   @if $breakpoint==sp {
     @media only screen and (max-width: 719px) {
       @content;
