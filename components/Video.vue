@@ -7,6 +7,8 @@
         playsinline
         muted
         loop
+        controls
+        autoplay
       ></video>
     </div>
   </div>
