@@ -88,6 +88,13 @@ a:hover {
   line-height: 70px;
   padding: 0 5px;
 }
+// user-select
+// .user-select {
+//   -moz-user-select: -moz-none;
+//   -ms-user-select: none;
+//   -webkit-user-select: none;
+//   user-select: none;
+// }
 // transform
 .rotated {
   -moz-transform: rotate(90deg);
@@ -116,8 +123,80 @@ a:hover {
 }
 
 // main
-.container {
+.main {
   // debug
   background-color: khaki;
   height: 300px;
+}
+.section {
+  @include respond(sp) {
+    padding: 200px 0 20px;
+  }
+}
+.section__title {
+  color: $clr-paragraph;
+  letter-spacing: 0.1em;
+  line-height: 1em;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  @include respond(pc) {
+    font-size: 1.5rem;
+    left: 0.5em;
+    position: absolute;
+    top: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%) rotate(90deg);
+    -ms-transform: translateX(-50%) translateY(-50%) rotate(90deg);
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(90deg);
+    transition: translateX(-50%) translateY(-50%) rotate(90deg);
+  }
+  @include respond(sp) {
+    font-size: 2rem;
+    margin: 50px 0 100px;
+    position: relative;
+    text-align: center;
+  }
+  &::before {
+    content: '';
+    display: block;
+    left: 50%;
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -moz-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    -o-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    -webkit-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    @include respond(pc) {
+      height: 7px;
+      margin-top: -2px;
+      width: 216px;
+    }
+    @include respond(sp) {
+      height: 9px;
+      margin-top: -3px;
+      width: 296px;
+    }
+  }
+}
+.title__wrap {
+  display: inline-block;
+  position: relative;
+}
+.title__item {
+  display: inline-block;
+  opacity: 1;
+  -moz-transform: matrix(1, 0, 0, 1, 0, 0);
+  -ms-transform: matrix(1, 0, 0, 1, 0, 0);
+  -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  -moz-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -o-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -webkit-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
