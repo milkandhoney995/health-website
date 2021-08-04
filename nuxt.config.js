@@ -57,7 +57,17 @@ export default {
   content: {},
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  build: {
+    // extend(config, ctx) {
+    //   const vueLoader = config.module.rules.find(
+    //     (loader) => loader.loader === 'vue-loader'
+    //   )
+    //   vueLoader.options.transformToRequire = {
+    //     video: 'src',
+    //     source: 'src',
+    //   }
+    // },
+  },
   firebase: {
     config: {
       apiKey: '<apiKey>',

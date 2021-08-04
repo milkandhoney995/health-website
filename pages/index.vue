@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-    <div class="section"></div>
+    <SectionMain />
     <SectionAbout />
     <div class="section">SERVICE</div>
     <div class="section">BLOG</div>
@@ -11,10 +11,12 @@
 
 <script>
 import SectionAbout from '@/components/SectionAbout'
+import SectionMain from '@/components/SectionMain'
 
 export default {
   components: {
     SectionAbout,
+    SectionMain,
   },
   layout: 'default',
 }
