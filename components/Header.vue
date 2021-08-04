@@ -30,9 +30,9 @@
     </div>
     <!-- SP -->
     <div class="header__fix__sp show__sp">
-      <div class="center">
+      <div class="wrapper center">
         <div class="logo">
-          <a>
+          <a href="">
             <h1 class="logo__title">UTANO HARADA</h1>
           </a>
         </div>
@@ -54,14 +54,16 @@
         </div>
 
         <transition name="hamburger__menu">
-          <div v-show="ActiveBtn" class="center wrapper">
-            <div class="box__top">
-              <div class="logo">
-                <a>
-                  <h1>UTANO HARADA</h1>
-                </a>
+          <div v-show="ActiveBtn" class="navi">
+            <!-- <div class="box__top">
+              <div class="center>
+                <div class="logo">
+                  <a>
+                    <h1>UTANO HARADA</h1>
+                  </a>
+                </div>
               </div>
-            </div>
+            </div> -->
             <nav class="menu">
               <ul class="menu__wrap menu__alignment">
                 <li class="menu__item">

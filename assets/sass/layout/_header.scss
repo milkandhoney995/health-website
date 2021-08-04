@@ -18,13 +18,16 @@
   // }
 }
 .menu {
-  float: right;
+  float: inherit;
   font-size: 0;
   letter-spacing: 0;
 }
 .menu__alignment {
   display: inline-block;
   vertical-align: middle;
+  @include respond(sp) {
+    padding: inherit;
+  }
 }
 .menu__item {
   display: inline-block;
@@ -38,11 +41,14 @@
 }
 li.menu__item + li.menu__item {
   margin-left: 15px;
+  @include respond(sp) {
+    margin-left: 0;
+  }
 }
 .menu__link {
   color: $clr-paragraph;
   display: inline-block;
-  font-size: 1.1rem;
+  font-size: 3rem;
   letter-spacing: 0.1em;
   line-height: 18px;
   padding: 0 2px 2px;
@@ -52,10 +58,26 @@ li.menu__item + li.menu__item {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   min-height: 100%;
-  padding: 100px 0 200px;
   position: relative;
   // debug
+  padding: 0 0 90px;
   background: pink;
+}
+// sp:menu項目
+.navi {
+  line-height: 7rem;
+}
+// .box__top {
+//   position: absolute;
+//   left: 0;
+//   top: 0;
+//   width: 100%;
+// }
+.box__btm {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
 }
 // sp:menuを開くボタン
 .hamburger__btn {
@@ -96,17 +118,4 @@ li.menu__item + li.menu__item {
 .item__change03 {
   transform: translateY(-10px) rotate(-45deg);
   transition: 0.4s ease;
-}
-// sp:menu項目
-.box__top {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-}
-.box__btm {
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  width: 100%;
 }

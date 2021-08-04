@@ -1,3 +1,16 @@
+// html, body
+html,
+body {
+  // background-color: $clr-bodyBG;
+  color: $clr-paragraph;
+  font-size: 62.5%;
+  font-feature-settings: 'palt' 1;
+  line-height: 1.5px;
+  width: 100%;
+  &:hover {
+    transition: 0.2s;
+  }
+}
 ul {
   list-style: none;
 }
@@ -70,7 +83,7 @@ a:hover {
 }
 .logo__title {
   display: inline-block;
-  font-size: 3rem;
+  font-size: 30px;
   letter-spacing: 0.1em;
   line-height: 70px;
   padding: 0 5px;
