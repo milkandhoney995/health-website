@@ -11,6 +11,9 @@ body {
     transition: 0.2s;
   }
 }
+h2 {
+  font-size: 3.5rem;
+}
 ul {
   list-style: none;
 }
@@ -47,25 +50,6 @@ a:hover {
 
 .link_fade:hover {
   opacity: 0.7;
-}
-.left {
-  float: left;
-}
-.center {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 0 auto;
-  position: relative;
-  text-align: center;
-  // debug
-  // background-color: $clr-white;
-  @include respond(sp) {
-    width: 720px;
-  }
-  @include respond(pc) {
-    width: 1280px;
-  }
 }
 .show__pc {
   display: block;
@@ -137,6 +121,16 @@ a:hover {
   -ms-user-select: none;
   -webkit-user-select: none;
   user-select: none;
+  @include respond(tablet) {
+    font-size: 1.5rem;
+    left: 0.5em;
+    position: absolute;
+    top: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%) rotate(90deg);
+    -ms-transform: translateX(-50%) translateY(-50%) rotate(90deg);
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(90deg);
+    transition: translateX(-50%) translateY(-50%) rotate(90deg);
+  }
   @include respond(pc) {
     font-size: 1.5rem;
     left: 0.5em;
@@ -178,6 +172,54 @@ a:hover {
       margin-top: -3px;
       width: 296px;
     }
+  }
+}
+.wrapper {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  min-height: 100%;
+  position: relative;
+  // debug
+  // padding: 0 0 90px;
+}
+.wrapper__explanation {
+  padding: 343px 0 0;
+  @include respond(sp) {
+    padding-top: 50px;
+  }
+}
+.section__image {
+  width: 50%;
+}
+.section__text {
+  padding-left: 120px;
+  width: 550px;
+  line-height: 1.5rem;
+  text-align: left;
+}
+.text__ja {
+  font-size: 1.2rem;
+  letter-spacing: 0.5rem;
+  line-height: 2.3rem;
+  padding-top: 35px;
+  @include respond(sp) {
+    font-size: 2rem;
+    letter-spacing: 0.2em;
+    line-height: 2.25em;
+    padding-top: 40px;
+  }
+}
+.text__en {
+  font-size: 1rem;
+  letter-spacing: 0.15em;
+  line-height: 2.15em;
+  padding-top: 35px;
+  @include respond(sp) {
+    font-size: 1.9rem;
+    letter-spacing: 0.14em;
+    line-height: 2em;
+    padding-top: 50px;
   }
 }
 .title__wrap {

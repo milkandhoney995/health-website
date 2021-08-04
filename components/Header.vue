@@ -4,7 +4,7 @@
     <div class="header__fix__pc show__pc">
       <div class="center">
         <nav class="menu">
-          <ul class="menu__alignment flex">
+          <ul class="menu__alignment flexbox">
             <li class="menu__item">
               <a href="" class="link__fade menu__link">ABOUT</a>
             </li>
@@ -21,7 +21,7 @@
               <a href="" class="link__fade menu__link">CONTACT</a>
             </li>
           </ul>
-          <ul class="menu__alignment flex">
+          <ul class="menu__alignment flexbox">
             <li class="menu__item">facebook</li>
             <li class="menu__item">Instagram</li>
           </ul>
@@ -31,7 +31,7 @@
     <!-- SP -->
     <div class="header__fix__sp show__sp">
       <div class="wrapper center">
-        <div class="logo">
+        <div v-show="!ActiveBtn" class="logo">
           <a href="">
             <h1 class="logo__title">UTANO HARADA</h1>
           </a>
@@ -55,16 +55,12 @@
 
         <transition name="hamburger__menu">
           <div v-show="ActiveBtn" class="navi">
-            <!-- <div class="box__top">
-              <div class="center>
-                <div class="logo">
-                  <a>
-                    <h1>UTANO HARADA</h1>
-                  </a>
-                </div>
-              </div>
-            </div> -->
             <nav class="menu">
+              <div class="logo">
+                <a href="">
+                  <h1 class="logo__title">UTANO HARADA</h1>
+                </a>
+              </div>
               <ul class="menu__wrap menu__alignment">
                 <li class="menu__item">
                   <a href="" class="link__fade menu__link">ABOUT</a>
@@ -82,13 +78,13 @@
                   <a href="" class="link__fade menu__link">CONTACT</a>
                 </li>
               </ul>
+              <div class="box__btm">
+                <ul class="menu__alignment">
+                  <li class="menu__item__sns">facebook</li>
+                  <li class="menu__item__sns">Instagram</li>
+                </ul>
+              </div>
             </nav>
-            <div class="box__btm">
-              <ul class="menu__alignment">
-                <li class="menu__item__sns">facebook</li>
-                <li class="menu__item__sns">Instagram</li>
-              </ul>
-            </div>
           </div>
         </transition>
       </div>

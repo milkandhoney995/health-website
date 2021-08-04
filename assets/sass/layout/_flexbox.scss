@@ -1,3 +1,25 @@
 .flexbox {
   display: flex !important;
 }
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.center {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  // debug
+  // background-color: $clr-white;
+  @include respond(sp) {
+    width: 720px;
+  }
+  @include respond(pc) {
+    width: 1280px;
+  }
+}

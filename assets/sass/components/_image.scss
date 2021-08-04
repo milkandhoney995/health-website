@@ -7,13 +7,14 @@ img {
     width: 100%;
   }
 }
-.image__profile {
+.image__wrap {
   display: block;
   font-size: 0;
   letter-spacing: 0;
   line-height: 0;
   overflow: hidden;
   position: relative;
+  float: right;
   &::after + ::before {
     background-color: #f1f1f1;
     content: '';
@@ -27,12 +28,13 @@ img {
     z-index: 2;
   }
 }
-.image__profile::before {
+.image__wrap::before {
   height: 100%;
   left: 150%;
   width: 200%;
+  color: aquamarine;
 }
-.image__profile::after {
+.image__wrap::after {
   height: 100%;
   left: 100%;
   -moz-transform: rotate(75deg);
@@ -40,8 +42,15 @@ img {
   -webkit-transform: rotate(75deg);
   transform: rotate(75deg);
   width: 100%;
+  color: aqua;
 }
 .image {
-  width: 50%;
+  margin-left: 50px;
+  width: 100%;
   height: auto;
+  position: relative;
+  top: 50%;
+  @include respond(sp) {
+    min-width: 100vw;
+  }
 }

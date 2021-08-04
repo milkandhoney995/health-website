@@ -10,7 +10,7 @@
 }
 .header__fix__sp {
   // @include respond(sp) {
-  padding-top: 50px;
+  // padding-top: 50px;
   left: 0;
   position: fixed;
   text-align: center;
@@ -25,6 +25,8 @@
   letter-spacing: 0;
   @include respond(sp) {
     float: inherit;
+    background-color: #fff;
+    height: 100vh;
   }
 }
 .menu__alignment {
@@ -60,15 +62,6 @@ li.menu__item + li.menu__item {
   @include respond(sp) {
     font-size: 3rem;
   }
-}
-.wrapper {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  min-height: 100%;
-  position: relative;
-  // debug
-  // padding: 0 0 90px;
 }
 // sp:menu項目
 .navi {

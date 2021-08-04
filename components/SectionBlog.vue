@@ -2,10 +2,8 @@
   <div class="section">
     <div class="center">
       <div class="section__image">
-        <div class="image">
-          <div class="image__wrap">
-            <img src="" alt="" />
-          </div>
+        <div class="image__wrap">
+          <img src="" alt="" />
         </div>
       </div>
       <SectionTitle />
@@ -17,7 +15,7 @@
 import SectionTitle from '@/components/SectionTitle.vue'
 
 export default {
-  name: 'SectionService',
+  name: 'SectionBlog',
   components: {
     SectionTitle,
   },
