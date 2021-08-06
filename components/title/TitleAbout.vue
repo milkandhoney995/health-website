@@ -13,6 +13,6 @@
 </template>
 <script>
 export default {
-  name: 'SectionTitle',
+  name: 'TitleAbout',
 }
 </script>
