@@ -24,23 +24,20 @@
             Coachの資格取得のために勉強中。
           </div>
         </div>
-        <div class="section__image right">
-          <div class="image__wrap">
-            <img class="image" src="@/assets/images/yoga.jpg" alt="" />
-          </div>
-        </div>
+        <SectionImage />
       </div>
     </div>
   </div>
 </template>
 <script>
 import SectionTitle from '@/components/SectionTitle.vue'
-// import Image from '@/components/Image.vue'
+import SectionImage from '@/components/SectionImage.vue'
 
 export default {
   name: 'SectionAbout',
   components: {
     SectionTitle,
+    SectionImage,
   },
 }
 </script>

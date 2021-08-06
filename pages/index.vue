@@ -4,7 +4,7 @@
     <SectionAbout />
     <SectionService />
     <SectionBlog />
-    <div class="section">RECIPE</div>
+    <SectionRecipe />
     <div class="section">CONTACT</div>
   </div>
 </template>
@@ -13,6 +13,7 @@
 import SectionAbout from '@/components/SectionAbout'
 import SectionService from '@/components/SectionService'
 import SectionBlog from '@/components/SectionBlog'
+import SectionRecipe from '@/components/SectionRecipe'
 import SectionMain from '@/components/SectionMain'
 
 export default {
@@ -21,6 +22,7 @@ export default {
     SectionMain,
     SectionService,
     SectionBlog,
+    SectionRecipe,
   },
   layout: 'default',
 }

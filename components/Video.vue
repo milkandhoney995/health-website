@@ -1,6 +1,6 @@
 <template>
   <div class="video__box">
-    <div class="movie__container">
+    <div class="video__container">
       <video class="movie" playsinline muted loop controls autoplay>
         <source src="@/assets/videos/main.mp4" type="video/mp4" />
       </video>
