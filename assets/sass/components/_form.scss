@@ -12,6 +12,7 @@
   line-height: 1.6em;
   font-size: 1.3rem;
   padding-bottom: 15px;
+  text-align: initial;
   @include respond(sp) {
     font-size: 3rem;
   }

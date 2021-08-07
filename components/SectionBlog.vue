@@ -1,7 +1,7 @@
 <template>
   <div class="section">
     <div class="center">
-      <TitleAbout />
+      <TitleBlog />
       <div class="flexbox wrapper__explanation">
         <div class="section__text left">
           <h2>Utano Harada</h2>
@@ -14,13 +14,13 @@
   </div>
 </template>
 <script>
-import TitleAbout from '@/components/title/TitleAbout.vue'
+import TitleBlog from '@/components/title/TitleBlog.vue'
 import SectionImage from '@/components/SectionImage.vue'
 
 export default {
   name: 'SectionBlog',
   components: {
-    TitleAbout,
+    TitleBlog,
     SectionImage,
   },
 }

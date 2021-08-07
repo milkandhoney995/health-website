@@ -1,7 +1,7 @@
 <template>
   <div class="section">
     <div class="center">
-      <TitleAbout />
+      <TitleRecipe />
       <div class="flexbox wrapper__explanation">
         <SectionImage />
         <div class="section__text right">
@@ -18,13 +18,13 @@
 </template>
 <script>
 import { mapState } from 'vuex'
-import TitleAbout from '@/components/title/TitleAbout.vue'
+import TitleRecipe from '@/components/title/TitleRecipe.vue'
 import SectionImage from '@/components/SectionImage.vue'
 
 export default {
   name: 'SectionRecipe',
   components: {
-    TitleAbout,
+    TitleRecipe,
     SectionImage,
   },
   ...mapState({

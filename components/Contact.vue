@@ -1,6 +1,7 @@
 <template>
   <div class="section">
-    <div class="wrapper__explanation">
+    <div class="center wrapper__explanation">
+      <TitleContact />
       <form action="multipart/form-data" method="post">
         <div class="form__wrap">
           <dl class="form__table">
@@ -70,7 +71,12 @@
   </div>
 </template>
 <script>
+import TitleContact from '@/components/title/TitleContact.vue'
+
 export default {
   name: 'Contact',
+  components: {
+    TitleContact,
+  },
 }
 </script>
