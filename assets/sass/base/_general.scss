@@ -1,4 +1,14 @@
 // html, body
+
+html,
+body,
+form {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
 html,
 body {
   // background-color: $clr-bodyBG;
@@ -10,6 +20,20 @@ body {
   &:hover {
     transition: 0.2s;
   }
+}
+textarea {
+  background-color: $clr-bodyBG;
+  border: 0 solid #000;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: $clr-paragraph;
+  display: block;
+  font-family: 'Lato', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic ProN',
+    'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
+  line-height: 1.4em;
+  margin: 0;
+  width: 100%;
 }
 h2 {
   font-size: 3.5rem;
@@ -39,17 +63,6 @@ a {
 
 a:hover {
   color: #646464;
-}
-.link_fade {
-  opacity: 1;
-  -moz-transition: opacity 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-  -o-transition: opacity 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-  -webkit-transition: opacity 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-  transition: opacity 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-
-.link_fade:hover {
-  opacity: 0.7;
 }
 .show__pc {
   display: block;
@@ -222,6 +235,18 @@ a:hover {
     padding-top: 50px;
   }
 }
+.text__small {
+  font-size: 0.85rem;
+  letter-spacing: 0.3em;
+  line-height: 1.85em;
+  padding-top: 15px;
+  @include respond(sp) {
+    font-size: 1.6rem;
+    letter-spacing: 0.1em;
+    line-height: 1.6em;
+    padding: 5px 0 0 40px;
+  }
+}
 .title__wrap {
   display: inline-block;
   position: relative;
@@ -237,4 +262,10 @@ a:hover {
   -o-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
   -webkit-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.border__bottom {
+  border-bottom: 7px solid #2d3c64;
+  @include respond(sp) {
+    border-bottom: 12px solid #2d3c64;
+  }
 }
