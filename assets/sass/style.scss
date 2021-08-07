@@ -4,6 +4,7 @@
 @import 'base/variables'; //変数
 @import 'base/responsive'; //responsive breakpoint
 @import 'base/general';
+@import 'base/transition';
 
 // layout: nav, tab, header, etc
 @import 'layout/flexbox'; //flex
@@ -15,3 +16,4 @@
 @import 'components/image.scss'; //image
 @import 'components/btn'; //ボタン
 @import 'components/overlay'; //オーバーレイ
+@import 'components/form'; //form

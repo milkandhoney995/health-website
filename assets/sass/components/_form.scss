@@ -1,0 +1,83 @@
+.form__wrap {
+  margin: 0 auto;
+  width: 680px;
+}
+.form__table {
+  overflow: hidden;
+}
+.form__title,
+.form__data {
+  color: #aaa;
+  letter-spacing: 0.12em;
+  line-height: 1.6em;
+  font-size: 1.3rem;
+  padding-bottom: 15px;
+  @include respond(sp) {
+    font-size: 3rem;
+  }
+}
+.form__title {
+  clear: left;
+  float: left;
+  width: 100px;
+  @include respond(sp) {
+    padding: 35px 0 5px 40px;
+  }
+}
+.form__data {
+  margin-left: 100px;
+  width: 580px;
+}
+.form__input,
+.btn__form {
+  background-color: $clr-bodyBG;
+  border: 0 solid #2d3c64;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: $clr-paragraph;
+  display: inline-block;
+  font-family: 'Lato', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic ProN',
+    'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
+  line-height: 33px;
+  -webkit-text-size-adjust: 100%;
+  width: 100%;
+  font-size: 2rem;
+  height: 40px;
+  letter-spacing: 0.3em;
+  padding: 6px 10px;
+  padding: 0;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  -moz-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -o-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -webkit-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  vertical-align: middle;
+  @include respond(sp) {
+    letter-spacing: 0.2em;
+    padding: 13px 15px 12px;
+    font-size: 5rem;
+    height: 80px;
+    line-height: 68px;
+    padding-left: 0.2em;
+    width: 208px;
+  }
+}
+.form__textarea {
+  font-size: 1.1rem;
+  height: 231px;
+  letter-spacing: 0.3em;
+  padding: 6px 10px;
+  @include respond(sp) {
+    font-size: 2rem;
+    height: 624px;
+    letter-spacing: 0.2em;
+    padding: 10px 15px;
+  }
+}
