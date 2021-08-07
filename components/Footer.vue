@@ -2,8 +2,8 @@
   <footer>
     <div class="footer">
       <div class="center">
-        <div class="btn-toTop">
-          <a class="link_fade top__link" href="">
+        <div class="toTop">
+          <a class="link_fade btn btn__footer" href="">
             <span>TOP</span>
           </a>
         </div>

@@ -29,8 +29,7 @@ textarea {
   box-sizing: border-box;
   color: $clr-paragraph;
   display: block;
-  font-family: 'Lato', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic ProN',
-    'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
+  font-family: $font-family;
   line-height: 1.4em;
   margin: 0;
   width: 100%;
@@ -85,20 +84,6 @@ a:hover {
   letter-spacing: 0.1em;
   line-height: 70px;
   padding: 0 5px;
-}
-// user-select
-// .user-select {
-//   -moz-user-select: -moz-none;
-//   -ms-user-select: none;
-//   -webkit-user-select: none;
-//   user-select: none;
-// }
-// transform
-.rotated {
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
 }
 .copyright {
   letter-spacing: 0.12em;
