@@ -1,5 +1,5 @@
 <template>
-  <div class="section">
+  <div v-scroll="handleScroll" class="section cubic-bezier__all">
     <div class="center">
       <TitleAbout />
       <div class="flexbox wrapper__explanation">
@@ -38,6 +38,17 @@ export default {
   components: {
     TitleAbout,
     SectionImage,
+  },
+  methods: {
+    handleScroll(event, element) {
+      if (window.scrollY > 50) {
+        element.setAttribute(
+          'style',
+          'transition: opacity 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);'
+        )
+      }
+      return window.scrollY > 100
+    },
   },
 }
 </script>

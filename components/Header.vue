@@ -1,8 +1,7 @@
 <template>
   <header>
     <!-- PC -->
-    <!-- debug for custom directive -->
-    <div v-bg class="header__fix__pc show__pc">
+    <div class="header__fix__pc show__pc">
       <div class="center">
         <nav class="menu">
           <ul class="menu__alignment flexbox">
