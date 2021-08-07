@@ -1,26 +1,71 @@
+// box-sizing:https://developer.mozilla.org/ja/docs/Web/CSS/box-sizing
+
 .btn {
+  background-color: $clr-bodyBG;
+  border: 0 solid #2d3c64;
+  color: $clr-paragraph;
+  display: inline-block;
+  font-family: $font-family;
+  line-height: 0.5rem;
+  font-size: 2rem;
+  letter-spacing: 0.2em;
   cursor: pointer;
   height: 20px;
   padding: 25px 19px;
+  text-decoration: none;
+}
+.btn__header {
+  background-color: transparent;
   position: absolute;
   right: 0;
   top: 15px;
   width: 32px;
+  font-size: 1rem;
 }
-.btn-toTop {
-  -moz-transition: opacity 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s;
-  -o-transition: opacity 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s;
-  -webkit-transition: opacity 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-  -webkit-transition-delay: 0.5s;
-  transition: opacity 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s;
-  transition-delay: 0.5s;
-  z-index: 1000;
+// sp:menuを開くボタン
+.hamburger__btn {
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+.hamburger__item {
+  background-color: $clr-paragraph;
+  // height: 2px;
+  left: 0;
+  position: absolute;
+  width: 45px;
+  height: 2px;
+  // background: $clr-paragraph;
+  text-align: center;
+}
+.hamburger__item:nth-of-type(1) {
+  top: 0;
+  transition: all 0.4s ease;
+}
+.hamburger__item:nth-of-type(2) {
+  top: 9px;
+  transition: all 0.4s ease;
+}
+.hamburger__item:nth-of-type(3) {
+  bottom: 0;
+  transition: all 0.4s ease;
+}
+.item__change01 {
+  transform: translateY(10px) rotate(45deg);
+  transition: all 0.4s ease;
+}
+.item__change02 {
+  transition: all 0.4s ease;
+  opacity: 0;
+}
+.item__change03 {
+  transform: translateY(-10px) rotate(-45deg);
+  transition: all 0.4s ease;
 }
 // formのsendボタン
 .form__btn {
   position: relative;
   text-align: right;
-  font-size: 0;
   padding-bottom: 0;
   @include respond(sp) {
     padding-top: 40px;
@@ -34,3 +79,6 @@
   right: 0;
   width: 20%;
 }
+// .btn__footer {
+//   background-color: #2d3c64;
+// }

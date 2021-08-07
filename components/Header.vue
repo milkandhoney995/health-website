@@ -36,7 +36,7 @@
             <h1 class="logo__title">UTANO HARADA</h1>
           </a>
         </div>
-        <div class="btn">
+        <div class="btn btn__header">
           <div class="hamburger__btn" @click="ActiveBtn = !ActiveBtn">
             <span
               class="hamburger__item"

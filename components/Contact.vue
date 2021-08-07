@@ -6,19 +6,39 @@
           <dl class="form__table">
             <dt class="form__title">COMPANY</dt>
             <dd class="form__data">
-              <input id="" class="form__input" type="text" name="" />
+              <input
+                id=""
+                class="form__input cubic-bezier__all"
+                type="text"
+                name=""
+              />
             </dd>
             <dt class="form__title">NAME</dt>
             <dd class="form__data">
-              <input id="" class="form__input" type="text" name="" />
+              <input
+                id=""
+                class="form__input cubic-bezier__all user-select"
+                type="text"
+                name=""
+              />
             </dd>
             <dt class="form__title">E-mail</dt>
             <dd class="form__data">
-              <input id="" class="form__input" type="text" name="" />
+              <input
+                id=""
+                class="form__input cubic-bezier__all user-select"
+                type="text"
+                name=""
+              />
             </dd>
             <dt class="form__title">TEL</dt>
             <dd class="form__data">
-              <input id="" class="form__input" type="text" name="" />
+              <input
+                id=""
+                class="form__input cubic-bezier__all user-select"
+                type="text"
+                name=""
+              />
             </dd>
             <dt class="form__title">MESSAGE</dt>
             <dd class="form__data">
@@ -36,7 +56,12 @@
               </div>
             </dd>
             <dd class="form__btn">
-              <button class="btn-send" type="submit">SEND</button>
+              <button
+                class="btn btn-send cubic-bezier__all link_fade"
+                type="submit"
+              >
+                SEND
+              </button>
             </dd>
           </dl>
         </div>
