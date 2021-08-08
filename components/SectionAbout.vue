@@ -1,5 +1,5 @@
 <template>
-  <div v-scroll="handleScroll" class="section cubic-bezier__all">
+  <div v-scroll="changeBackgroundColor" class="section cubic-bezier__all">
     <div class="center">
       <TitleAbout />
       <div class="flexbox wrapper__explanation">
@@ -40,45 +40,17 @@ export default {
     SectionImage,
   },
   methods: {
-    handleScroll(event, element) {
-      if (window.scrollY > 50) {
+    changeBackgroundColor(event, element) {
+      const section = document.querySelector('.section')
+      let bgColor = getComputedStyle(section).backgroundColor
+      bgColor = bgColor.replace(/rgb|\(|\)/g, '')
+
+      const hsl = this.$changeRgbToHsl(bgColor)
+      if (window.scrollY > 100) {
         element.setAttribute('style', '.cubic-bezier__all')
+        console.log(hsl)
       }
       return window.scrollY > 100
-    },
-    // switch:https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Statements/switch
-    // RGBをHSLに変換する方法:https://lab.syncer.jp/Web/JavaScript/Snippet/68/
-    // RGBからHSLに変換する関数
-    changeRgbToHsl(rgb) {
-      const r = rgb[0] / 255
-      const g = rgb[1] / 255
-      const b = rgb[2] / 255
-
-      const min = Math.min(r, g, b)
-      const max = Math.max(r, g, b)
-      const diff = max - min
-      let h = 0
-      const l = (max + min) / 2
-      const s = diff / (1 - Math.abs(max + min - 1))
-      switch (min) {
-        case max:
-          h = 0
-          break
-
-        case r:
-          h = 60 * ((b - g) / diff) + 180
-          break
-
-        case g:
-          h = 60 * ((r - b) / diff) + 300
-          break
-
-        case b:
-          h = 60 * ((g - r) / diff) + 60
-          break
-      }
-
-      return [h, s, l]
     },
   },
 }
