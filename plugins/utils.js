@@ -35,6 +35,7 @@ const changeRgbToHsl = function (rgb) {
 
   return [h, s, l]
 }
+
 // eslint-disable-next-line no-empty-pattern
 export default ({}, inject) => {
   inject('changeRgbToHsl', changeRgbToHsl)

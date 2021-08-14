@@ -3,7 +3,9 @@
     <div class="center">
       <TitleService />
       <div class="flexbox wrapper__explanation">
-        <SectionImage src="@/assets/images/yoga.jpg" />
+        <div class="section__image left">
+          <SectionImage src="@/assets/images/yoga.jpg" />
+        </div>
         <div class="section__text right">
           <h2>Utano Harada</h2>
           <div class="text__ja">

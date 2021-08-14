@@ -24,7 +24,9 @@
             Coachの資格取得のために勉強中。
           </div>
         </div>
-        <SectionImage />
+        <div class="section__image right">
+          <SectionImage />
+        </div>
       </div>
     </div>
   </div>
@@ -40,6 +42,7 @@ export default {
     SectionImage,
   },
   methods: {
+    // https://digipress.info/tech/change-background-color-by-scrolling/
     changeBackgroundColor(event, element) {
       const section = document.querySelector('.section')
       let bgColor = getComputedStyle(section).backgroundColor

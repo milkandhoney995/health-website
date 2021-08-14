@@ -3,7 +3,9 @@
     <div class="center">
       <TitleRecipe />
       <div class="flexbox wrapper__explanation">
-        <SectionImage />
+        <div class="section__image left">
+          <SectionImage />
+        </div>
         <div class="section__text right">
           <h2>Utano Harada</h2>
           <div class="text__ja">
