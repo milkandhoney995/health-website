@@ -1,6 +1,8 @@
 <template>
   <div>
-    <SectionMain />
+    <div class="section mainVideo">
+      <Video />
+    </div>
     <SectionAbout />
     <SectionService />
     <SectionBlog />
@@ -13,15 +15,15 @@ import SectionAbout from '@/components/SectionAbout'
 import SectionService from '@/components/SectionService'
 import SectionBlog from '@/components/SectionBlog'
 import Contact from '@/components/Contact'
-import SectionMain from '@/components/SectionMain'
+import Video from '@/components/Video.vue'
 
 export default {
   components: {
     SectionAbout,
-    SectionMain,
     SectionService,
     SectionBlog,
     Contact,
+    Video,
   },
   layout: 'default',
 }
