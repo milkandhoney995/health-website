@@ -1,8 +1,6 @@
 <template>
   <div class="section mainVideo">
-    <div class="center">
-      <Video />
-    </div>
+    <Video />
   </div>
 </template>
 <script>

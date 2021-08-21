@@ -14,8 +14,6 @@
   margin: 0 auto;
   position: relative;
   text-align: center;
-  // debug
-  // background-color: $clr-white;
   @include respond(sp) {
     width: 720px;
   }
