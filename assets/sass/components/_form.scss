@@ -7,7 +7,7 @@
 }
 .form__title,
 .form__data {
-  color: #aaa;
+  color: $clr-paragraph;
   letter-spacing: 0.12em;
   line-height: 1.6em;
   font-size: 1.3rem;
@@ -30,8 +30,8 @@
   width: 580px;
 }
 .form__input {
-  background-color: $clr-bodyBG;
-  border: 0 solid #2d3c64;
+  background-color: $clr-form;
+  border: 0 solid $clr-form;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -60,6 +60,7 @@
   }
 }
 .form__textarea {
+  background-color: $clr-form;
   font-size: 1.1rem;
   height: 231px;
   letter-spacing: 0.3em;

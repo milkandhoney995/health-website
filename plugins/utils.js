@@ -35,8 +35,39 @@ const changeRgbToHsl = function (rgb) {
 
   return [h, s, l]
 }
+// https://digipress.info/tech/change-background-color-by-scrolling/
+// const changeBackgroundColor = function (element) {
+//   const section = document.querySelector('.section')
+//   let bgColor = getComputedStyle(section).backgroundColor
+//   bgColor = bgColor.replace(/rgb|\(|\)/g, '')
 
+//   const hsl = this.$changeRgbToHsl(bgColor)
+//   if (window.scrollY > 100) {
+//     element.setAttribute('style', '.cubic-bezier__all')
+//     console.log(hsl)
+//   }
+// }
+
+const changeBackgroundColor = function () {
+  const scroll = window.pageYOffset
+  console.log(scroll)
+
+  if (scroll > 4000) {
+    document.body.style.backgroundColor = '#fcfbed'
+  } else if (scroll > 3300) {
+    document.body.style.backgroundColor = '#f0edfc'
+  } else if (scroll > 2800) {
+    document.body.style.backgroundColor = '#bae3cf'
+  } else if (scroll > 2000) {
+    document.body.style.backgroundColor = '#fae8ca'
+  } else if (scroll > 1000) {
+    document.body.style.backgroundColor = '#d6efff'
+  } else {
+    document.body.style.backgroundColor = '#facadd'
+  }
+}
 // eslint-disable-next-line no-empty-pattern
 export default ({}, inject) => {
   inject('changeRgbToHsl', changeRgbToHsl)
+  inject('changeBackgroundColor', changeBackgroundColor)
 }

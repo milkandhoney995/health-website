@@ -1,5 +1,5 @@
 <template>
-  <div v-scroll="changeBackgroundColor" class="section cubic-bezier__all">
+  <div class="section cubic-bezier__all">
     <div class="center">
       <TitleAbout />
       <div class="flexbox wrapper__explanation">
@@ -40,21 +40,6 @@ export default {
   components: {
     TitleAbout,
     SectionImage,
-  },
-  methods: {
-    // https://digipress.info/tech/change-background-color-by-scrolling/
-    changeBackgroundColor(event, element) {
-      const section = document.querySelector('.section')
-      let bgColor = getComputedStyle(section).backgroundColor
-      bgColor = bgColor.replace(/rgb|\(|\)/g, '')
-
-      const hsl = this.$changeRgbToHsl(bgColor)
-      if (window.scrollY > 100) {
-        element.setAttribute('style', '.cubic-bezier__all')
-        console.log(hsl)
-      }
-      return window.scrollY > 100
-    },
   },
 }
 </script>

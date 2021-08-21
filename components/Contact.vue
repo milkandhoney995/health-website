@@ -8,7 +8,7 @@
             <dt class="form__title">COMPANY</dt>
             <dd class="form__data">
               <input
-                id=""
+                id="company"
                 class="form__input cubic-bezier__all"
                 type="text"
                 name=""
@@ -17,7 +17,7 @@
             <dt class="form__title">NAME</dt>
             <dd class="form__data">
               <input
-                id=""
+                id="name"
                 class="form__input cubic-bezier__all user-select"
                 type="text"
                 name=""
@@ -26,7 +26,7 @@
             <dt class="form__title">E-mail</dt>
             <dd class="form__data">
               <input
-                id=""
+                id="email"
                 class="form__input cubic-bezier__all user-select"
                 type="text"
                 name=""
@@ -35,7 +35,7 @@
             <dt class="form__title">TEL</dt>
             <dd class="form__data">
               <input
-                id=""
+                id="tel"
                 class="form__input cubic-bezier__all user-select"
                 type="text"
                 name=""
@@ -44,7 +44,7 @@
             <dt class="form__title">MESSAGE</dt>
             <dd class="form__data">
               <textarea
-                id=""
+                id="message"
                 class="form__textarea border__bottom"
                 type="text"
                 name=""
