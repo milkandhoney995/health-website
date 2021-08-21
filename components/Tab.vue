@@ -1,65 +1,58 @@
 <template>
-  <div class="tabs">
+  <div class="tabs flexBox">
     <input
-      id="tab__portrait1"
-      class="tab__input"
+      id="nature"
       type="radio"
+      class="tab__item"
       name="cp_tab"
       aria-controls="first_tab02"
       checked
     />
-    <label for="tab__portrait1" class="tab__label">Nature</label>
+    <label for="nature" class="tab__item">Nature</label>
     <input
-      id="tab__portrait2"
-      class="tab__input"
+      id="sing"
+      class="tab__item"
       type="radio"
       name="cp_tab"
       aria-controls="second_tab02"
     />
-    <label for="tab__portrait2" class="tab__label">Sing</label>
+    <label for="sing" class="tab__item">Sing</label>
     <input
-      id="tab__portrait3"
-      class="tab__input"
+      id="book"
+      class="tab__item"
       type="radio"
       name="cp_tab"
       aria-controls="third_tab02"
     />
-    <label for="tab__portrait3" class="tab__label">Book</label>
+    <label for="book" class="tab__item">Book</label>
     <input
-      id="tab__portrait4"
-      class="tab__input"
+      id="mindset"
+      class="tab__item"
       type="radio"
       name="cp_tab"
       aria-controls="force_tab02"
     />
-    <label for="tab__portrait4" class="tab__label">Force Tab</label>
-    <div class="tab__panels">
-      <div class="tab__panel">
-        <h2>Daily</h2>
-        <p><SectionImage /></p>
-      </div>
-      <div class="tab__panel">
-        <h2>Sing</h2>
-        <p><SectionImage /></p>
-      </div>
-      <div class="tab__panel">
-        <h2>Book</h2>
-        <p>Third Tab text</p>
-      </div>
-      <div class="tab__panel">
-        <h2>Mindset</h2>
-        <p>Force Tab text</p>
-      </div>
+    <label for="mindset" class="tab__item">Mindset</label>
+    <div id="nature__content" class="tab__content">
+      <h2>Nature</h2>
+      <p>Explanation of sing</p>
+    </div>
+    <div id="sing__content" class="tab__content">
+      <h2>Sing</h2>
+      <p>Explanation of sing</p>
+    </div>
+    <div id="book__content" class="tab__content">
+      <h2>Book</h2>
+      <p>Explanation of book</p>
+    </div>
+    <div id="mindset__content" class="tab__content">
+      <h2>Mindset</h2>
+      <p>Explanation of mindset</p>
     </div>
   </div>
 </template>
 <script>
-import SectionImage from '@/components/SectionImage.vue'
-
 export default {
   name: 'Tab',
-  components: {
-    SectionImage,
-  },
 }
 </script>

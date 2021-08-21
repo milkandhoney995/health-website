@@ -2,17 +2,10 @@
   <div class="section">
     <div class="center">
       <TitleBlog />
-      <div class="flexbox wrapper__explanation">
-        <div class="section__text left">
-          <h2>Utano Harada</h2>
-          <div class="text__ja">ブログです。</div>
-          <div class="text__en">This is my blog.</div>
-        </div>
-        <div class="section__text right">
+      <div class="wrapper__explanation">
+        <div class="section__text">
           <Tab />
         </div>
-
-        <!-- <SectionImage /> -->
       </div>
     </div>
   </div>

@@ -3,75 +3,56 @@
 .tabs::after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  background-color: $clr-white;
 }
 .tabs {
   margin: 0 auto;
   position: relative;
 }
-.tab__input {
+input[type='radio'] {
   margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0;
   outline: none;
   background: none;
   -webkit-appearance: none;
   appearance: none;
-  position: relative;
-  z-index: 100;
-  display: block;
-  width: 15rem;
-  //   margin-bottom: -20px;
-  padding: 15px;
-  cursor: pointer;
-  border: 1px solid #ccc;
-  //   border-right: 0;
-  border-radius: 6px 0 0 6px;
-}
-.tab__label {
-  position: relative;
-  z-index: 100;
-  top: -35px;
-  right: 30px;
-  display: block;
-  width: 10em;
-  //   margin-bottom: -20px;
-  padding: 10px;
-  cursor: pointer;
-  font-size: 2rem;
-  text-align: center;
-}
-.tab__panel {
   display: none;
 }
-.tab__panels {
+.tab__item {
+  height: calc(100% / 4);
+  position: relative;
+  top: 0;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  width: 18%;
+  cursor: pointer;
+  border-right: 0.5rem solid $clr-tabInput;
+  text-align: center;
+  color: #565656;
+  background-color: #fff;
+  font-size: 2rem;
+  line-height: 100px;
+}
+.tab__content {
+  display: none;
+  clear: both;
+  overflow: hidden;
+}
+.tab__item:hover,
+input:checked + .tab__item {
+  background-color: $clr-tabInput;
+}
+#nature:checked ~ #nature__content,
+#sing:checked ~ #sing__content,
+#book:checked ~ #book__content,
+#mindset:checked ~ #mindset__content {
+  display: block;
+  padding: 0.5em 1em;
   position: absolute;
   top: 0;
   left: 21.5rem;
-  display: block;
-  //   debug
-  //   width: 350px;
-  //   height: 200px;
-  background: aliceblue;
 }
-
-.tab__input:first-child:checked ~ .tab__panel:first-child,
-.tab__input:nth-child(3):checked ~ .tab__panel:nth-child(2),
-.tab__input:nth-child(5):checked ~ .tab__panel:nth-child(3),
-.tab__input:nth-child(7):checked ~ .tab__panel:nth-child(4),
-.tab__input:nth-child(9):checked ~ .tab__panel:nth-child(5),
-.tab__input:nth-child(11):checked ~ .tab__panel:nth-child(6) {
-  display: block;
-  padding: 0.5em 1em;
-  border-left: 1px solid #ccc;
-  min-height: 320px;
-}
-.tab__input:checked,
-.tab__label {
-  border-color: #ccc;
-  border-right: 1px solid $clr-bodyBG;
-}
-.tab__label,
-.tab__input:focus {
-  color: $clr-paragraph;
-}
-// .tab__label:last-of-type {
-//   margin-bottom: 100px;
-// }

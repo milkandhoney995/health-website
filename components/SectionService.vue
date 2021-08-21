@@ -3,10 +3,10 @@
     <div class="center">
       <TitleService />
       <div class="flexbox wrapper__explanation">
-        <div class="section__image left">
+        <div class="section__image left width__half">
           <SectionImage src="@/assets/images/yoga.jpg" />
         </div>
-        <div class="section__text right">
+        <div class="section__text right width__half">
           <h2>Utano Harada</h2>
           <div class="text__ja">
             毎日美味しいものを食べて、幸せになろう

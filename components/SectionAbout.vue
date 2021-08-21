@@ -3,7 +3,7 @@
     <div class="center">
       <TitleAbout />
       <div class="flexbox wrapper__explanation">
-        <div class="section__text left">
+        <div class="section__text left width__half">
           <h2>Utano Harada</h2>
           <div class="text__ja">
             1997年千葉県松戸市生まれ
@@ -24,7 +24,7 @@
             Coachの資格取得のために勉強中。
           </div>
         </div>
-        <div class="section__image right">
+        <div class="section__image right width__half">
           <SectionImage />
         </div>
       </div>
