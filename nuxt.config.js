@@ -19,7 +19,11 @@ export default {
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: ['@plugins/scroll.js', '@/plugins/utils.js'],
+  plugins: [
+    '@plugins/scroll.js',
+    '@/plugins/utils.js',
+    '@/plugins/firebase.js',
+  ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -70,13 +74,13 @@ export default {
   },
   firebase: {
     config: {
-      apiKey: '<apiKey>',
-      authDomain: '<authDomain>',
-      projectId: '<projectId>',
-      storageBucket: '<storageBucket>',
-      messagingSenderId: '<messagingSenderId>',
-      appId: '<appId>',
-      measurementId: '<measurementId>',
+      apiKey: 'AIzaSyCXeHWmYjsFYeSb7jI3NUTbak5-5ryM5xc',
+      authDomain: 'health-website-c58ef.firebaseapp.com',
+      projectId: 'health-website-c58ef',
+      storageBucket: 'health-website-c58ef.appspot.com',
+      messagingSenderId: '980880698793',
+      appId: '1:980880698793:web:0379ce6408cabdfde3e8b8',
+      measurementId: 'G-KLQS0G4Y18',
     },
     services: {
       firestore: true,
