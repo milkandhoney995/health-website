@@ -6,7 +6,9 @@
         <nav class="menu">
           <ul class="menu__alignment flexbox">
             <li class="menu__item">
-              <nuxt-link to="" class="link__fade menu__link">ABOUT</nuxt-link>
+              <nuxt-link to="/about" class="link__fade menu__link"
+                >ABOUT</nuxt-link
+              >
             </li>
             <li class="menu__item">
               <nuxt-link to="" class="link__fade menu__link">SERVICE</nuxt-link>
