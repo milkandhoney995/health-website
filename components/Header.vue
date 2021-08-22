@@ -6,19 +6,19 @@
         <nav class="menu">
           <ul class="menu__alignment flexbox">
             <li class="menu__item">
-              <a href="" class="link__fade menu__link">ABOUT</a>
+              <nuxt-link to="" class="link__fade menu__link">ABOUT</nuxt-link>
             </li>
             <li class="menu__item">
-              <a href="" class="link__fade menu__link">SERVICE</a>
+              <nuxt-link to="" class="link__fade menu__link">SERVICE</nuxt-link>
             </li>
             <li class="menu__item">
-              <a href="" class="link__fade menu__link">BLOG</a>
+              <nuxt-link to="" class="link__fade menu__link">BLOG</nuxt-link>
             </li>
             <li class="menu__item">
-              <a href="" class="link__fade menu__link">RECIPE</a>
+              <nuxt-link to="" class="link__fade menu__link">RECIPE</nuxt-link>
             </li>
             <li class="menu__item">
-              <a href="" class="link__fade menu__link">CONTACT</a>
+              <nuxt-link to="" class="link__fade menu__link">CONTACT</nuxt-link>
             </li>
           </ul>
           <ul class="menu__alignment flexbox">
@@ -32,9 +32,9 @@
     <div class="header__fix__sp show__sp">
       <div class="wrapper center">
         <div v-show="!ActiveBtn" class="logo">
-          <a href="">
+          <nuxt-link to="">
             <h1 class="logo__title">UTANO HARADA</h1>
-          </a>
+          </nuxt-link>
         </div>
         <div class="btn btn__header">
           <div class="hamburger__btn" @click="ActiveBtn = !ActiveBtn">
@@ -57,25 +57,35 @@
           <div v-show="ActiveBtn" class="navi">
             <nav class="menu">
               <div class="logo">
-                <a href="">
+                <nuxt-link to="/">
                   <h1 class="logo__title">UTANO HARADA</h1>
-                </a>
+                </nuxt-link>
               </div>
               <ul class="menu__wrap menu__alignment">
                 <li class="menu__item">
-                  <a href="" class="link__fade menu__link">ABOUT</a>
+                  <nuxt-link to="" class="link__fade menu__link"
+                    >ABOUT</nuxt-link
+                  >
                 </li>
                 <li class="menu__item">
-                  <a href="" class="link__fade menu__link">SERVICE</a>
+                  <nuxt-link to="" class="link__fade menu__link"
+                    >SERVICE</nuxt-link
+                  >
                 </li>
                 <li class="menu__item">
-                  <a href="" class="link__fade menu__link">BLOG</a>
+                  <nuxt-link to="" class="link__fade menu__link"
+                    >BLOG</nuxt-link
+                  >
                 </li>
                 <li class="menu__item">
-                  <a href="" class="link__fade menu__link">RECIPE</a>
+                  <nuxt-link to="" class="link__fade menu__link"
+                    >RECIPE</nuxt-link
+                  >
                 </li>
                 <li class="menu__item">
-                  <a href="" class="link__fade menu__link">CONTACT</a>
+                  <nuxt-link to="/" class="link__fade menu__link"
+                    >CONTACT</nuxt-link
+                  >
                 </li>
               </ul>
               <div class="box__btm">
