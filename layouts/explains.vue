@@ -12,6 +12,7 @@ import Footer from '@/components/Footer'
 import MainTitle from '@/components/title/MainTitle.vue'
 
 export default {
+  // 参考：https://qiita.com/yama-t/items/b051cd9ea802f69da118
   name: 'Explains',
   components: {
     Header,
