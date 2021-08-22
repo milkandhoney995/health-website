@@ -79,6 +79,11 @@
   right: 0;
   width: 20%;
 }
-// .btn__footer {
-//   background-color: #2d3c64;
-// }
+.btn__toTop {
+  position: fixed;
+  right: 14px;
+  bottom: 14px;
+  border-radius: 50%;
+  background: #f5f5d4;
+  text-align: center;
+}

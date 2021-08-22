@@ -5,7 +5,7 @@
       type="radio"
       class="tab__item"
       name="cp_tab"
-      aria-controls="first_tab02"
+      aria-controls="mindset"
       checked
     />
     <label for="mindset" class="tab__item">Mindset</label>
@@ -14,7 +14,7 @@
       class="tab__item"
       type="radio"
       name="cp_tab"
-      aria-controls="second_tab02"
+      aria-controls="sing"
     />
     <label for="sing" class="tab__item">Sing</label>
     <input
@@ -22,7 +22,7 @@
       class="tab__item"
       type="radio"
       name="cp_tab"
-      aria-controls="third_tab02"
+      aria-controls="book"
     />
     <label for="book" class="tab__item">Book</label>
     <input
@@ -30,7 +30,7 @@
       class="tab__item"
       type="radio"
       name="cp_tab"
-      aria-controls="force_tab02"
+      aria-controls="recipe"
     />
     <label for="recipe" class="tab__item">recipe</label>
     <div id="mindset__content" class="tab__content">
