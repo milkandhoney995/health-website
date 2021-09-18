@@ -1,9 +1,16 @@
 <template>
-  <div>add</div>
+  <div>
+    <Scrollbox />
+  </div>
 </template>
 <script>
+import Scrollbox from '@/components/ScrollBox.vue'
+
 export default {
   name: 'About',
+  components: {
+    Scrollbox,
+  },
   layout: 'explains',
   data() {
     return {

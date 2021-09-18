@@ -46,7 +46,6 @@ input[type='radio'] {
 input:checked + .tab__item {
   background-color: $clr-tabInput;
 }
-#recipe:checked ~ #recipe__content,
 #sing:checked ~ #sing__content,
 #book:checked ~ #book__content,
 #mindset:checked ~ #mindset__content {

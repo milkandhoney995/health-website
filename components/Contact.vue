@@ -5,7 +5,7 @@
       <form action="multipart/form-data" method="post">
         <div class="form__wrap">
           <dl class="form__table">
-            <dt class="form__title">COMPANY</dt>
+            <!-- <dt class="form__title">COMPANY</dt>
             <dd class="form__data">
               <input
                 id="company"
@@ -13,7 +13,7 @@
                 type="text"
                 name=""
               />
-            </dd>
+            </dd> -->
             <dt class="form__title">NAME</dt>
             <dd class="form__data">
               <input

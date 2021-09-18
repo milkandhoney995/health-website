@@ -17,9 +17,6 @@
               <nuxt-link to="" class="link__fade menu__link">BLOG</nuxt-link>
             </li>
             <li class="menu__item">
-              <nuxt-link to="" class="link__fade menu__link">RECIPE</nuxt-link>
-            </li>
-            <li class="menu__item">
               <nuxt-link to="" class="link__fade menu__link">CONTACT</nuxt-link>
             </li>
           </ul>
@@ -77,11 +74,6 @@
                 <li class="menu__item">
                   <nuxt-link to="" class="link__fade menu__link"
                     >BLOG</nuxt-link
-                  >
-                </li>
-                <li class="menu__item">
-                  <nuxt-link to="" class="link__fade menu__link"
-                    >RECIPE</nuxt-link
                   >
                 </li>
                 <li class="menu__item">

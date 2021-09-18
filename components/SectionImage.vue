@@ -1,6 +1,6 @@
 <template>
   <div class="image__wrap">
-    <img class="image" src="@/assets/images/yoga.jpg" alt="" />
+    <img class="image" :src="imageUrl" alt="" />
   </div>
 </template>
 <script>
@@ -9,7 +9,7 @@ import { mapState } from 'vuex'
 export default {
   name: 'SectionImage',
   props: {
-    image: {
+    imageUrl: {
       type: String,
       default: '',
     },

@@ -25,7 +25,7 @@
           </div>
         </div>
         <div class="section__image right width__half">
-          <SectionImage />
+          <SectionImage :image-url="require('@/assets/images/Church.jpeg')" />
         </div>
       </div>
     </div>
@@ -41,5 +41,10 @@ export default {
     TitleAbout,
     SectionImage,
   },
+  // data() {
+  //   return {
+  //     image: '@/assets/images/Church.jpeg',
+  //   }
+  // },
 }
 </script>

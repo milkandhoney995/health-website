@@ -5,6 +5,7 @@
       <div class="wrapper__explanation">
         <div class="section__text">
           <Tab />
+          <!-- <Scrollbox /> -->
         </div>
       </div>
     </div>
@@ -21,6 +22,7 @@ export default {
     TitleBlog,
     // SectionImage,
     Tab,
+    // Scrollbox,
   },
 }
 </script>
