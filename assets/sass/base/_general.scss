@@ -152,13 +152,7 @@ a:hover {
     opacity: 1;
     position: absolute;
     top: 50%;
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
-    -moz-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-    -o-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-    -webkit-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
     transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
     @include respond(pc) {
       height: 7px;
