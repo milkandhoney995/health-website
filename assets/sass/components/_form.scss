@@ -40,21 +40,17 @@
   line-height: 33px;
   -webkit-text-size-adjust: 100%;
   width: 100%;
-  font-size: 2rem;
+  font-size: 1.5rem;
   height: 40px;
-  letter-spacing: 0.3em;
-  padding: 0;
+  padding-left: 10px;
   position: relative;
   text-align: left;
   text-decoration: none;
   vertical-align: middle;
   @include respond(sp) {
-    letter-spacing: 0.2em;
-    padding: 13px 15px 12px;
-    font-size: 5rem;
-    height: 80px;
+    font-size: 2rem;
+    height: 60px;
     line-height: 68px;
-    padding-left: 0.2em;
   }
 }
 .form__textarea {

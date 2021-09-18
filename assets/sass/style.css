@@ -32,7 +32,7 @@ textarea {
   box-sizing: border-box;
   color: #2a2a2a;
   display: block;
-  font-family: "Lato", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic ProN", "メイリオ", meiryo, "ＭＳ Ｐゴシック", sans-serif;
+  font-family: "Lato", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic ProN", "メイリオ", "ＭＳ Ｐゴシック", sans-serif;
   line-height: 1.4em;
   margin: 0;
   width: 100%;
@@ -602,7 +602,7 @@ img {
   border: 0 solid #2d3c64;
   color: #2a2a2a;
   display: inline-block;
-  font-family: "Lato", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic ProN", "メイリオ", meiryo, "ＭＳ Ｐゴシック", sans-serif;
+  font-family: "Lato", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic ProN", "メイリオ", "ＭＳ Ｐゴシック", sans-serif;
   line-height: 0.5rem;
   font-size: 2rem;
   letter-spacing: 0.2em;
@@ -754,14 +754,13 @@ img {
   box-sizing: border-box;
   color: #2a2a2a;
   display: inline-block;
-  font-family: "Lato", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic ProN", "メイリオ", meiryo, "ＭＳ Ｐゴシック", sans-serif;
+  font-family: "Lato", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic ProN", "メイリオ", "ＭＳ Ｐゴシック", sans-serif;
   line-height: 33px;
   -webkit-text-size-adjust: 100%;
   width: 100%;
-  font-size: 2rem;
+  font-size: 1.5rem;
   height: 40px;
-  letter-spacing: 0.3em;
-  padding: 0;
+  padding-left: 10px;
   position: relative;
   text-align: left;
   text-decoration: none;
@@ -770,12 +769,9 @@ img {
 
 @media only screen and (max-width: 719px) {
   .form__input {
-    letter-spacing: 0.2em;
-    padding: 13px 15px 12px;
-    font-size: 5rem;
-    height: 80px;
+    font-size: 2rem;
+    height: 60px;
     line-height: 68px;
-    padding-left: 0.2em;
   }
 }
 
