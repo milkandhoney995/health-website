@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="section mainVideo">
+    <div class="mainVideo">
       <Video />
     </div>
     <SectionAbout />
