@@ -20,8 +20,6 @@
 }
 .mainVideo {
   @include respond(sp) {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     min-height: calc(100vh - 200px);
   }
@@ -36,10 +34,10 @@
   transform: translate(-50%, -50%);
 }
 .box__title {
+  text-align: center;
+  padding: 0 50px;
+  line-height: 1.2;
+  color: $clr-white;
   font-size: 6rem;
   font-weight: bold;
-  line-height: 1.2;
-  padding: 0 50px;
-  text-align: center;
-  color: $clr-white;
 }

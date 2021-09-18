@@ -11,28 +11,25 @@ form {
 }
 html,
 body {
-  // background-color: $clr-bodyBG;
+  width: 100%;
   color: $clr-paragraph;
   font-size: 62.5%;
   font-feature-settings: 'palt' 1;
   line-height: 1.5px;
-  width: 100%;
   &:hover {
     transition: 0.2s;
   }
 }
 textarea {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
   background-color: $clr-bodyBG;
   border: 0 solid #000;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
   color: $clr-paragraph;
-  display: block;
   font-family: $font-family;
   line-height: 1.4em;
-  margin: 0;
-  width: 100%;
 }
 h2 {
   font-size: 3.5rem;
@@ -80,28 +77,25 @@ a:hover {
 }
 .logo__title {
   display: inline-block;
+  padding: 0 5px;
   font-size: 30px;
   letter-spacing: 0.1em;
   line-height: 70px;
-  padding: 0 5px;
 }
 .copyright {
+  position: absolute;
+  right: 0;
+  top: 0;
   letter-spacing: 0.12em;
   line-height: 1em;
   color: $clr-paragraph;
   font-size: 1.3rem;
-  position: absolute;
-  right: 0;
-  top: 0;
-  -moz-transform-origin: right top;
-  -ms-transform-origin: right top;
-  -webkit-transform-origin: right top;
   transform-origin: right top;
   @include respond(sp) {
+    padding: 30px 0 60px;
     font-size: 2rem;
     letter-spacing: 0.12em;
     line-height: 1em;
-    padding: 30px 0 60px;
   }
 }
 
@@ -115,65 +109,52 @@ a:hover {
   color: $clr-paragraph;
   letter-spacing: 0.1em;
   line-height: 1em;
-  -moz-user-select: -moz-none;
-  -ms-user-select: none;
-  -webkit-user-select: none;
   user-select: none;
   @include respond(tablet) {
-    font-size: 1.5rem;
-    left: 0.5em;
     position: absolute;
     top: 50%;
-    -moz-transform: translateX(-50%) translateY(-50%) rotate(90deg);
-    -ms-transform: translateX(-50%) translateY(-50%) rotate(90deg);
-    -webkit-transform: translateX(-50%) translateY(-50%) rotate(90deg);
+    left: 0.5em;
+    font-size: 1.5rem;
     transition: translateX(-50%) translateY(-50%) rotate(90deg);
   }
   @include respond(pc) {
-    font-size: 1.5rem;
-    left: 0.5em;
     position: absolute;
     top: 50%;
-    -moz-transform: translateX(-50%) translateY(-50%) rotate(90deg);
-    -ms-transform: translateX(-50%) translateY(-50%) rotate(90deg);
-    -webkit-transform: translateX(-50%) translateY(-50%) rotate(90deg);
+    left: 0.5em;
+    font-size: 1.5rem;
     transition: translateX(-50%) translateY(-50%) rotate(90deg);
   }
   @include respond(sp) {
-    font-size: 2rem;
-    margin: 50px 0 100px;
     position: relative;
     text-align: center;
+    margin: 50px 0 100px;
+    font-size: 2rem;
   }
   &::before {
-    content: '';
     display: block;
-    left: 50%;
-    opacity: 1;
     position: absolute;
     top: 50%;
+    left: 50%;
+    content: '';
+    opacity: 1;
     transform: translateX(-50%);
     transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
     @include respond(pc) {
+      width: 216px;
       height: 7px;
       margin-top: -2px;
-      width: 216px;
     }
     @include respond(sp) {
+      width: 296px;
       height: 9px;
       margin-top: -3px;
-      width: 296px;
     }
   }
 }
 .wrapper {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
+  position: relative;
   box-sizing: border-box;
   min-height: 100%;
-  position: relative;
-  // debug
-  // padding: 0 0 90px;
 }
 .wrapper__explanation {
   padding: 200px 0 0;
@@ -185,45 +166,44 @@ a:hover {
   width: 50%;
 }
 .section__text {
-  padding-left: 120px;
-  // width: 550px;
-  line-height: 1.5rem;
   text-align: left;
+  padding-left: 120px;
+  line-height: 1.5rem;
 }
 .text__ja {
+  padding-top: 35px;
   font-size: 1.2rem;
   letter-spacing: 0.5rem;
   line-height: 2.3rem;
-  padding-top: 35px;
   @include respond(sp) {
+    padding-top: 40px;
     font-size: 2rem;
     letter-spacing: 0.2em;
     line-height: 2.25em;
-    padding-top: 40px;
   }
 }
 .text__en {
+  padding-top: 35px;
   font-size: 1rem;
   letter-spacing: 0.15em;
   line-height: 2.15em;
-  padding-top: 35px;
   @include respond(sp) {
+    padding-top: 50px;
     font-size: 1.9rem;
     letter-spacing: 0.14em;
     line-height: 2em;
-    padding-top: 50px;
   }
 }
 .text__small {
+  padding-top: 15px;
   font-size: 0.85rem;
   letter-spacing: 0.3em;
   line-height: 1.85em;
-  padding-top: 15px;
   @include respond(sp) {
+    padding: 5px 0 0 40px;
     font-size: 1.6rem;
     letter-spacing: 0.1em;
     line-height: 1.6em;
-    padding: 5px 0 0 40px;
   }
 }
 .title__wrap {

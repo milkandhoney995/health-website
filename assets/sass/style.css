@@ -11,12 +11,12 @@ form {
 
 html,
 body {
+  width: 100%;
   color: #2a2a2a;
   font-size: 62.5%;
   -webkit-font-feature-settings: 'palt' 1;
           font-feature-settings: 'palt' 1;
   line-height: 1.5px;
-  width: 100%;
 }
 
 html:hover,
@@ -26,16 +26,16 @@ body:hover {
 }
 
 textarea {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  margin: 0;
   background-color: #fffafa;
   border: 0 solid #000;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
   color: #2a2a2a;
-  display: block;
   font-family: "Lato", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic ProN", "メイリオ", "ＭＳ Ｐゴシック", sans-serif;
   line-height: 1.4em;
-  margin: 0;
-  width: 100%;
 }
 
 h2 {
@@ -97,30 +97,30 @@ a:hover {
 
 .logo__title {
   display: inline-block;
+  padding: 0 5px;
   font-size: 30px;
   letter-spacing: 0.1em;
   line-height: 70px;
-  padding: 0 5px;
 }
 
 .copyright {
+  position: absolute;
+  right: 0;
+  top: 0;
   letter-spacing: 0.12em;
   line-height: 1em;
   color: #2a2a2a;
   font-size: 1.3rem;
-  position: absolute;
-  right: 0;
-  top: 0;
   -webkit-transform-origin: right top;
-  transform-origin: right top;
+          transform-origin: right top;
 }
 
 @media only screen and (max-width: 719px) {
   .copyright {
+    padding: 30px 0 60px;
     font-size: 2rem;
     letter-spacing: 0.12em;
     line-height: 1em;
-    padding: 30px 0 60px;
   }
 }
 
@@ -134,21 +134,18 @@ a:hover {
   color: #2a2a2a;
   letter-spacing: 0.1em;
   line-height: 1em;
-  -moz-user-select: -moz-none;
-  -ms-user-select: none;
   -webkit-user-select: none;
-  user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 @media only screen and (min-width: 721px) and (max-width: 1000px) {
   .section__title {
-    font-size: 1.5rem;
-    left: 0.5em;
     position: absolute;
     top: 50%;
-    -moz-transform: translateX(-50%) translateY(-50%) rotate(90deg);
-    -ms-transform: translateX(-50%) translateY(-50%) rotate(90deg);
-    -webkit-transform: translateX(-50%) translateY(-50%) rotate(90deg);
+    left: 0.5em;
+    font-size: 1.5rem;
     -webkit-transition: translateX(-50%) translateY(-50%) rotate(90deg);
     transition: translateX(-50%) translateY(-50%) rotate(90deg);
   }
@@ -156,13 +153,10 @@ a:hover {
 
 @media only screen and (min-width: 1001px) {
   .section__title {
-    font-size: 1.5rem;
-    left: 0.5em;
     position: absolute;
     top: 50%;
-    -moz-transform: translateX(-50%) translateY(-50%) rotate(90deg);
-    -ms-transform: translateX(-50%) translateY(-50%) rotate(90deg);
-    -webkit-transform: translateX(-50%) translateY(-50%) rotate(90deg);
+    left: 0.5em;
+    font-size: 1.5rem;
     -webkit-transition: translateX(-50%) translateY(-50%) rotate(90deg);
     transition: translateX(-50%) translateY(-50%) rotate(90deg);
   }
@@ -170,20 +164,20 @@ a:hover {
 
 @media only screen and (max-width: 719px) {
   .section__title {
-    font-size: 2rem;
-    margin: 50px 0 100px;
     position: relative;
     text-align: center;
+    margin: 50px 0 100px;
+    font-size: 2rem;
   }
 }
 
 .section__title::before {
-  content: '';
   display: block;
-  left: 50%;
-  opacity: 1;
   position: absolute;
   top: 50%;
+  left: 50%;
+  content: '';
+  opacity: 1;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   -webkit-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -192,25 +186,25 @@ a:hover {
 
 @media only screen and (min-width: 1001px) {
   .section__title::before {
+    width: 216px;
     height: 7px;
     margin-top: -2px;
-    width: 216px;
   }
 }
 
 @media only screen and (max-width: 719px) {
   .section__title::before {
+    width: 296px;
     height: 9px;
     margin-top: -3px;
-    width: 296px;
   }
 }
 
 .wrapper {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  min-height: 100%;
   position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  min-height: 100%;
 }
 
 .wrapper__explanation {
@@ -228,56 +222,56 @@ a:hover {
 }
 
 .section__text {
+  text-align: left;
   padding-left: 120px;
   line-height: 1.5rem;
-  text-align: left;
 }
 
 .text__ja {
+  padding-top: 35px;
   font-size: 1.2rem;
   letter-spacing: 0.5rem;
   line-height: 2.3rem;
-  padding-top: 35px;
 }
 
 @media only screen and (max-width: 719px) {
   .text__ja {
+    padding-top: 40px;
     font-size: 2rem;
     letter-spacing: 0.2em;
     line-height: 2.25em;
-    padding-top: 40px;
   }
 }
 
 .text__en {
+  padding-top: 35px;
   font-size: 1rem;
   letter-spacing: 0.15em;
   line-height: 2.15em;
-  padding-top: 35px;
 }
 
 @media only screen and (max-width: 719px) {
   .text__en {
+    padding-top: 50px;
     font-size: 1.9rem;
     letter-spacing: 0.14em;
     line-height: 2em;
-    padding-top: 50px;
   }
 }
 
 .text__small {
+  padding-top: 15px;
   font-size: 0.85rem;
   letter-spacing: 0.3em;
   line-height: 1.85em;
-  padding-top: 15px;
 }
 
 @media only screen and (max-width: 719px) {
   .text__small {
+    padding: 5px 0 0 40px;
     font-size: 1.6rem;
     letter-spacing: 0.1em;
     line-height: 1.6em;
-    padding: 5px 0 0 40px;
   }
 }
 
@@ -509,7 +503,7 @@ li.menu__item + li.menu__item {
 @media only screen and (max-width: 719px) {
   .mainVideo {
     -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+            box-sizing: border-box;
     min-height: calc(100vh - 200px);
   }
 }
@@ -524,12 +518,12 @@ li.menu__item + li.menu__item {
 }
 
 .box__title {
+  text-align: center;
+  padding: 0 50px;
+  line-height: 1.2;
+  color: #fff;
   font-size: 6rem;
   font-weight: bold;
-  line-height: 1.2;
-  padding: 0 50px;
-  text-align: center;
-  color: #fff;
 }
 
 img {
@@ -548,47 +542,47 @@ img {
 
 .image__wrap {
   display: block;
+  position: relative;
+  float: right;
   font-size: 0;
   letter-spacing: 0;
   line-height: 0;
   overflow: hidden;
-  position: relative;
-  float: right;
 }
 
 .image__wrap::after + ::before {
-  background-color: #f1f1f1;
-  content: '';
   display: block;
   position: absolute;
   top: 0;
+  content: '';
+  background-color: #f1f1f1;
   -webkit-transition: left 0.6s linear;
   transition: left 0.6s linear;
   z-index: 2;
 }
 
 .image__wrap::before {
+  width: 200%;
   height: 100%;
   left: 150%;
-  width: 200%;
   color: aquamarine;
 }
 
 .image__wrap::after {
+  width: 100%;
   height: 100%;
   left: 100%;
   -webkit-transform: rotate(75deg);
-  transform: rotate(75deg);
-  width: 100%;
+          transform: rotate(75deg);
   color: aqua;
 }
 
 .image {
-  margin-left: 50px;
-  width: 100%;
-  height: auto;
   position: relative;
   top: 50%;
+  width: 100%;
+  height: auto;
+  margin-left: 50px;
 }
 
 @media only screen and (max-width: 719px) {
@@ -704,8 +698,8 @@ img {
 }
 
 .form__wrap {
-  margin: 0 auto;
   width: 680px;
+  margin: 0 auto;
 }
 
 .form__table {
@@ -721,12 +715,12 @@ img {
 
 .form__title,
 .form__data {
+  padding-bottom: 15px;
+  text-align: initial;
   color: #2a2a2a;
   letter-spacing: 0.12em;
   line-height: 1.6em;
   font-size: 1.3rem;
-  padding-bottom: 15px;
-  text-align: initial;
 }
 
 @media only screen and (max-width: 719px) {
@@ -748,47 +742,47 @@ img {
 }
 
 .form__input {
-  background-color: #fcf8fa;
-  border: 0 solid #fcf8fa;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  color: #2a2a2a;
   display: inline-block;
-  font-family: "Lato", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic ProN", "メイリオ", "ＭＳ Ｐゴシック", sans-serif;
-  line-height: 33px;
-  -webkit-text-size-adjust: 100%;
-  width: 100%;
-  font-size: 1.5rem;
-  height: 40px;
-  padding-left: 10px;
   position: relative;
   text-align: left;
-  text-decoration: none;
   vertical-align: middle;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: 40px;
+  padding-left: 10px;
+  font-family: "Lato", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic ProN", "メイリオ", "ＭＳ Ｐゴシック", sans-serif;
+  font-size: 1.5rem;
+  line-height: 33px;
+  color: #2a2a2a;
+  background-color: #fcf8fa;
+  border: 0 solid #fcf8fa;
+  -webkit-text-size-adjust: 100%;
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 719px) {
   .form__input {
-    font-size: 2rem;
     height: 60px;
+    font-size: 2rem;
     line-height: 68px;
   }
 }
 
 .form__textarea {
-  background-color: #fcf8fa;
-  font-size: 1.1rem;
   height: 231px;
-  letter-spacing: 0.3em;
   padding: 6px 10px;
+  font-size: 1.1rem;
+  letter-spacing: 0.3em;
+  background-color: #fcf8fa;
 }
 
 @media only screen and (max-width: 719px) {
   .form__textarea {
-    font-size: 2rem;
     height: 624px;
-    letter-spacing: 0.2em;
     padding: 10px 15px;
+    font-size: 2rem;
+    letter-spacing: 0.2em;
   }
 }
 

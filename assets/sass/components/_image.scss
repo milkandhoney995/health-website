@@ -9,44 +9,41 @@ img {
 }
 .image__wrap {
   display: block;
+  position: relative;
+  float: right;
   font-size: 0;
   letter-spacing: 0;
   line-height: 0;
   overflow: hidden;
-  position: relative;
-  float: right;
   &::after + ::before {
-    background-color: #f1f1f1;
-    content: '';
     display: block;
     position: absolute;
     top: 0;
+    content: '';
+    background-color: #f1f1f1;
     transition: left 0.6s linear;
     z-index: 2;
   }
 }
 .image__wrap::before {
+  width: 200%;
   height: 100%;
   left: 150%;
-  width: 200%;
   color: aquamarine;
 }
 .image__wrap::after {
+  width: 100%;
   height: 100%;
   left: 100%;
-  -moz-transform: rotate(75deg);
-  -ms-transform: rotate(75deg);
-  -webkit-transform: rotate(75deg);
   transform: rotate(75deg);
-  width: 100%;
   color: aqua;
 }
 .image {
-  margin-left: 50px;
-  width: 100%;
-  height: auto;
   position: relative;
   top: 50%;
+  width: 100%;
+  height: auto;
+  margin-left: 50px;
   @include respond(sp) {
     min-width: 100vw;
   }
