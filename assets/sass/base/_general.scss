@@ -11,7 +11,6 @@ form {
 }
 html,
 body {
-  width: 100%;
   color: $clr-paragraph;
   font-size: 62.5%;
   font-feature-settings: 'palt' 1;
@@ -137,7 +136,13 @@ a:hover {
     left: 50%;
     content: '';
     opacity: 1;
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
+    -moz-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    -o-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    -webkit-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
     transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
     @include respond(pc) {
       width: 216px;
@@ -200,7 +205,6 @@ a:hover {
   letter-spacing: 0.3em;
   line-height: 1.85em;
   @include respond(sp) {
-    padding: 5px 0 0 40px;
     font-size: 1.6rem;
     letter-spacing: 0.1em;
     line-height: 1.6em;
