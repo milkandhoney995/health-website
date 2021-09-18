@@ -233,13 +233,7 @@ a:hover {
 .title__item {
   display: inline-block;
   opacity: 1;
-  -moz-transform: matrix(1, 0, 0, 1, 0, 0);
-  -ms-transform: matrix(1, 0, 0, 1, 0, 0);
-  -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
   transform: matrix(1, 0, 0, 1, 0, 0);
-  -moz-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-  -o-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-  -webkit-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .border__bottom {

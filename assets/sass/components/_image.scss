@@ -21,9 +21,6 @@ img {
     display: block;
     position: absolute;
     top: 0;
-    -moz-transition: left 0.6s linear;
-    -o-transition: left 0.6s linear;
-    -webkit-transition: left 0.6s linear;
     transition: left 0.6s linear;
     z-index: 2;
   }
