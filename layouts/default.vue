@@ -39,16 +39,14 @@ export default {
       const scroll = window.pageYOffset
       console.log(scroll)
 
-      if (scroll > 2800) {
-        document.body.style.backgroundColor = '#fcfbed' // 黄色
-      } else if (scroll > 2000) {
-        document.body.style.backgroundColor = '#f0edfc' // 薄紫
+      if (scroll > 2000) {
+        document.body.style.backgroundColor = '#f7ebef'
       } else if (scroll > 1300) {
-        document.body.style.backgroundColor = '#d4ece0' // 緑
+        document.body.style.backgroundColor = '#f5ceda'
       } else if (scroll > 600) {
-        document.body.style.backgroundColor = '#fce5ec' // pink
+        document.body.style.backgroundColor = '#f5e4e9' // pink
       } else {
-        document.body.style.backgroundColor = '#fffafa'
+        document.body.style.backgroundColor = '#fce5ec'
       }
     },
     returnTop() {
