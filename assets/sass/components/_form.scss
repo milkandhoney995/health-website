@@ -3,6 +3,8 @@
   width: 680px;
 }
 .form__table {
+  display: inline-flex;
+  flex-direction: column;
   overflow: hidden;
 }
 .form__title,
@@ -18,16 +20,13 @@
   }
 }
 .form__title {
-  clear: left;
-  float: left;
-  width: 100px;
   @include respond(sp) {
-    padding: 35px 0 5px 40px;
+    padding: 35px 0 5px 0;
   }
 }
 .form__data {
-  margin-left: 100px;
   width: 580px;
+  margin: 0 auto;
 }
 .form__input {
   background-color: $clr-form;
@@ -56,7 +55,6 @@
     height: 80px;
     line-height: 68px;
     padding-left: 0.2em;
-    width: 208px;
   }
 }
 .form__textarea {

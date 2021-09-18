@@ -6,7 +6,7 @@
   text-align: right;
   top: 60px;
   width: 100%;
-  z-index: 3000;
+  z-index: 30;
 }
 .header__fix__sp {
   // @include respond(sp) {
@@ -16,7 +16,7 @@
   text-align: center;
   top: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 20;
   // }
 }
 .menu {
