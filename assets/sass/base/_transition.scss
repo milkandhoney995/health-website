@@ -5,15 +5,9 @@
 
 .link_fade {
   opacity: 1;
-  -moz-transition: opacity 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-  -o-transition: opacity 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-  -webkit-transition: opacity 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: opacity 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .cubic-bezier__all {
-  -moz-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-  -o-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-  -webkit-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
