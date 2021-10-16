@@ -1,19 +1,10 @@
 <template>
   <div class="section">
     <div class="center wrapper__explanation">
-      <TitleContact />
+      <MainTitle :title="'Contact'" />
       <form action="multipart/form-data" method="post">
         <div class="form__wrap">
           <dl class="form__table">
-            <!-- <dt class="form__title">COMPANY</dt>
-            <dd class="form__data">
-              <input
-                id="company"
-                class="form__input cubic-bezier__all"
-                type="text"
-                name=""
-              />
-            </dd> -->
             <dt class="form__title">NAME</dt>
             <dd class="form__data">
               <input
@@ -71,12 +62,12 @@
   </div>
 </template>
 <script>
-import TitleContact from '@/components/title/TitleContact.vue'
+import MainTitle from '@/components/title/MainTitle.vue'
 
 export default {
   name: 'Contact',
   components: {
-    TitleContact,
+    MainTitle,
   },
 }
 </script>

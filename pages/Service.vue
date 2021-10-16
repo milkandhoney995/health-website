@@ -34,7 +34,7 @@ export default {
   components: {
     SectionImage,
   },
-  layout: 'explains',
+  layout: 'detail',
   data() {
     return {
       mainTitle: {

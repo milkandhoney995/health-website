@@ -6,6 +6,9 @@
         <nav class="menu">
           <ul class="menu__alignment flexbox">
             <li class="menu__item">
+              <nuxt-link to="/" class="link__fade menu__link">HOME</nuxt-link>
+            </li>
+            <li class="menu__item">
               <nuxt-link to="/about" class="link__fade menu__link"
                 >ABOUT</nuxt-link
               >
@@ -64,12 +67,17 @@
               </div>
               <ul class="menu__wrap menu__alignment">
                 <li class="menu__item">
-                  <nuxt-link to="" class="link__fade menu__link"
+                  <nuxt-link to="/" class="link__fade menu__link"
+                    >HOME</nuxt-link
+                  >
+                </li>
+                <li class="menu__item">
+                  <nuxt-link to="/about" class="link__fade menu__link"
                     >ABOUT</nuxt-link
                   >
                 </li>
                 <li class="menu__item">
-                  <nuxt-link to="" class="link__fade menu__link"
+                  <nuxt-link to="/service" class="link__fade menu__link"
                     >SERVICE</nuxt-link
                   >
                 </li>

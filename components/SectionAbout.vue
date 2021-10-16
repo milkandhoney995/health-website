@@ -3,7 +3,7 @@
     <div class="center">
       <div class="flexbox wrapper__explanation">
         <div class="section__text left width__half">
-          <TitleAbout />
+          <MainTitle :title="'About'" />
         </div>
         <div class="section__image right width__half">
           <SectionImage :image-url="require('@/assets/images/Church.jpeg')" />
@@ -13,14 +13,14 @@
   </div>
 </template>
 <script>
-import TitleAbout from '@/components/title/TitleAbout.vue'
+import MainTitle from '@/components/title/MainTitle.vue'
 import SectionImage from '@/components/SectionImage.vue'
 
 export default {
   name: 'SectionAbout',
   components: {
-    TitleAbout,
     SectionImage,
+    MainTitle,
   },
   // data() {
   //   return {

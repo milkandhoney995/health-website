@@ -104,58 +104,6 @@ a:hover {
     padding: 200px 0 20px;
   }
 }
-.section__title {
-  color: $clr-paragraph;
-  letter-spacing: 0.1em;
-  line-height: 1em;
-  user-select: none;
-  @include respond(tablet) {
-    position: absolute;
-    top: 50%;
-    left: 0.5em;
-    font-size: 1.5rem;
-    transition: translateX(-50%) translateY(-50%) rotate(90deg);
-  }
-  @include respond(pc) {
-    position: absolute;
-    top: 50%;
-    left: 0.5em;
-    font-size: 1.5rem;
-    transition: translateX(-50%) translateY(-50%) rotate(90deg);
-  }
-  @include respond(sp) {
-    position: relative;
-    text-align: center;
-    margin: 50px 0 100px;
-    font-size: 2rem;
-  }
-  &::before {
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    content: '';
-    opacity: 1;
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    -moz-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-    -o-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-    -webkit-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-    @include respond(pc) {
-      width: 216px;
-      height: 7px;
-      margin-top: -2px;
-    }
-    @include respond(sp) {
-      width: 296px;
-      height: 9px;
-      margin-top: -3px;
-    }
-  }
-}
 .wrapper {
   position: relative;
   box-sizing: border-box;
@@ -209,16 +157,6 @@ a:hover {
     letter-spacing: 0.1em;
     line-height: 1.6em;
   }
-}
-.title__wrap {
-  display: inline-block;
-  position: relative;
-}
-.title__item {
-  display: inline-block;
-  opacity: 1;
-  transform: matrix(1, 0, 0, 1, 0, 0);
-  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .border__bottom {
   border-bottom: 7px solid #2d3c64;

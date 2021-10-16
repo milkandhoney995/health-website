@@ -1,26 +1,23 @@
 <template>
   <div class="section">
     <div class="center">
-      <TitleBlog />
+      <MainTitle :title="'Blog'" />
       <div class="wrapper__explanation">
         <div class="section__text">
           <Tab />
-          <!-- <Scrollbox /> -->
         </div>
       </div>
     </div>
   </div>
 </template>
 <script>
-import TitleBlog from '@/components/title/TitleBlog.vue'
-// import SectionImage from '@/components/SectionImage.vue'
+import MainTitle from '@/components/title/MainTitle.vue'
 import Tab from '@/components/Tab.vue'
 
 export default {
   name: 'SectionBlog',
   components: {
-    TitleBlog,
-    // SectionImage,
+    MainTitle,
     Tab,
     // Scrollbox,
   },
