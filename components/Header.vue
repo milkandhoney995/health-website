@@ -11,7 +11,9 @@
               >
             </li>
             <li class="menu__item">
-              <nuxt-link to="" class="link__fade menu__link">SERVICE</nuxt-link>
+              <nuxt-link to="/service" class="link__fade menu__link"
+                >SERVICE</nuxt-link
+              >
             </li>
             <li class="menu__item">
               <nuxt-link to="" class="link__fade menu__link">BLOG</nuxt-link>
