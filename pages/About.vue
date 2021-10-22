@@ -16,7 +16,12 @@
           <div class="text__en">
             Born in 1997, Matsudo in Chiba.
             <br />Alumnai of International Christian University, in the college
-            of Liberal Arts. <br />在学中にLEGO MINDSTROME
+            of Liberal Arts. <br />I graduated from International Christian
+            University, Mitaka, in Tokyo. I majored in chemistry, and studied
+            philosophy and religion, law, environmental studies, and peace
+            studies.
+
+            <br />在学中にLEGO MINDSTROME
             EV3で実験用ロボットを制作したことがきっかけで、プログラミングに目覚める。
             <br />現在はフロントエンドエンジニアとして働く傍ら、Institute for
             Integrative NutritionのHolistic Health

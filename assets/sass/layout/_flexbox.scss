@@ -15,7 +15,7 @@
   position: relative;
   text-align: center;
   @include respond(sp) {
-    width: 720px;
+    width: 550px;
   }
   @include respond(pc) {
     width: 1280px;
