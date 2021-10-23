@@ -4,7 +4,7 @@
       <MainTitle :title="'Blog'" />
       <div class="wrapper__explanation">
         <div class="section__text">
-          <Tab />
+          <Tabs />
         </div>
       </div>
     </div>
@@ -12,13 +12,13 @@
 </template>
 <script>
 import MainTitle from '@/components/title/MainTitle.vue'
-import Tab from '@/components/Tab.vue'
+import Tabs from '@/components/Tabs.vue'
 
 export default {
   name: 'SectionBlog',
   components: {
     MainTitle,
-    Tab,
+    Tabs,
     // Scrollbox,
   },
 }
