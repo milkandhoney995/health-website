@@ -2,20 +2,19 @@
   <div class="section">
     <div class="center">
       <div class="flexbox wrapper__explanation">
-        <!-- TODO: Aboutセクションで画像を右表示にする -->
         <template v-if="setImageLeft"
-          ><div class="section__image left width__half">
+          ><div class="left width--half" style="margin-left: 25px">
             <SectionImage :image-url="imageUrl" />
           </div>
-          <div class="section__text right width__half">
+          <div class="section__text right width--half">
             <MainTitle :title="title" />
           </div>
         </template>
         <template v-else>
-          <div class="section__image left width__half">
+          <div class="section__text left width--half">
             <MainTitle :title="title" />
           </div>
-          <div class="section__text right width__half">
+          <div class="right width--half" style="margin-right: 25px">
             <SectionImage :image-url="imageUrl" />
           </div>
         </template>

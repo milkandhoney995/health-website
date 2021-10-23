@@ -43,7 +43,6 @@ img {
   top: 50%;
   width: 100%;
   height: auto;
-  margin-left: 50px;
   @include respond(sp) {
     min-width: 100vw;
   }

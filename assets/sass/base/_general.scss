@@ -111,13 +111,10 @@ a:hover {
   min-height: 100%;
 }
 .wrapper__explanation {
-  padding: 200px 0 0;
+  padding: 100px 0 0;
   @include respond(sp) {
     padding-top: 50px;
   }
-}
-.section__image {
-  width: 50%;
 }
 .section__text {
   text-align: left;

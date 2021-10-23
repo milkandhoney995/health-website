@@ -14,7 +14,7 @@ body {
   color: #2a2a2a;
   font-size: 62.5%;
   -webkit-font-feature-settings: 'palt' 1;
-          font-feature-settings: 'palt' 1;
+  font-feature-settings: 'palt' 1;
   line-height: 1.5px;
 }
 
@@ -27,13 +27,14 @@ body:hover {
 textarea {
   display: block;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 100%;
   margin: 0;
   background-color: #fffafa;
   border: 0 solid #000;
   color: #2a2a2a;
-  font-family: "Lato", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic ProN", "メイリオ", "ＭＳ Ｐゴシック", sans-serif;
+  font-family: 'Lato', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic ProN',
+    'メイリオ', 'ＭＳ Ｐゴシック', sans-serif;
   line-height: 1.4em;
 }
 
@@ -111,7 +112,7 @@ a:hover {
   color: #2a2a2a;
   font-size: 1.3rem;
   -webkit-transform-origin: right top;
-          transform-origin: right top;
+  transform-origin: right top;
 }
 
 @media only screen and (max-width: 719px) {
@@ -134,9 +135,9 @@ a:hover {
   letter-spacing: 0.1em;
   line-height: 1em;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 @media only screen and (min-width: 721px) and (max-width: 1000px) {
@@ -202,7 +203,7 @@ a:hover {
 .wrapper {
   position: relative;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   min-height: 100%;
 }
 
@@ -282,7 +283,7 @@ a:hover {
   display: inline-block;
   opacity: 1;
   -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
-          transform: matrix(1, 0, 0, 1, 0, 0);
+  transform: matrix(1, 0, 0, 1, 0, 0);
   -webkit-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
@@ -364,7 +365,7 @@ a:hover {
   }
 }
 
-.width__half {
+.width--half {
   width: 50%;
 }
 
@@ -489,7 +490,7 @@ li.menu__item + li.menu__item {
   min-height: 100%;
   min-width: 100%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 @media only screen and (max-width: 719px) {
@@ -501,7 +502,7 @@ li.menu__item + li.menu__item {
 @media only screen and (max-width: 719px) {
   .mainVideo {
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     min-height: calc(100vh - 200px);
   }
 }
@@ -571,7 +572,7 @@ img {
   height: 100%;
   left: 100%;
   -webkit-transform: rotate(75deg);
-          transform: rotate(75deg);
+  transform: rotate(75deg);
   color: aqua;
 }
 
@@ -594,7 +595,8 @@ img {
   border: 0 solid #2d3c64;
   color: #2a2a2a;
   display: inline-block;
-  font-family: "Lato", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic ProN", "メイリオ", "ＭＳ Ｐゴシック", sans-serif;
+  font-family: 'Lato', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic ProN',
+    'メイリオ', 'ＭＳ Ｐゴシック', sans-serif;
   line-height: 0.5rem;
   font-size: 2rem;
   letter-spacing: 0.2em;
@@ -648,7 +650,7 @@ img {
 
 .item__change01 {
   -webkit-transform: translateY(10px) rotate(45deg);
-          transform: translateY(10px) rotate(45deg);
+  transform: translateY(10px) rotate(45deg);
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
@@ -661,7 +663,7 @@ img {
 
 .item__change03 {
   -webkit-transform: translateY(-10px) rotate(-45deg);
-          transform: translateY(-10px) rotate(-45deg);
+  transform: translateY(-10px) rotate(-45deg);
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
@@ -706,8 +708,8 @@ img {
   display: inline-flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   overflow: hidden;
 }
 
@@ -745,11 +747,12 @@ img {
   text-align: left;
   vertical-align: middle;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 100%;
   height: 40px;
   padding-left: 10px;
-  font-family: "Lato", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic ProN", "メイリオ", "ＭＳ Ｐゴシック", sans-serif;
+  font-family: 'Lato', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic ProN',
+    'メイリオ', 'ＭＳ Ｐゴシック', sans-serif;
   font-size: 1.5rem;
   line-height: 33px;
   color: #2a2a2a;
@@ -806,7 +809,7 @@ input[type='radio'] {
   background: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-       appearance: none;
+  appearance: none;
   display: none;
 }
 
@@ -816,11 +819,11 @@ input[type='radio'] {
   top: 0;
   display: block;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   z-index: 100;
   width: 18%;
   cursor: pointer;

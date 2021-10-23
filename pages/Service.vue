@@ -2,7 +2,7 @@
   <div class="section cubic-bezier__all">
     <div class="center">
       <div class="flexbox wrapper__explanation">
-        <div class="section__text left width__half">
+        <div class="section__text left width--half">
           <h2>Service</h2>
           <div class="text__ja">
             【プログラミング】
@@ -19,7 +19,7 @@
             code, ツール：AWS (CodeCommit) <br />OS：Mac
           </div>
         </div>
-        <div class="section__image right width__half">
+        <div class="section__image right width--half">
           <SectionImage :image-url="require('@/assets/images/Church.jpeg')" />
         </div>
       </div>
