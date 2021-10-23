@@ -35,19 +35,40 @@
     <label for="recipe" class="tab__item">recipe</label>
     <div id="mindset__content" class="tab__content">
       <h2>Mindset</h2>
-      <p>Explanation of mindset</p>
+      <p>
+        Explanation of mindsetExplanation of mindsetExplanation of
+        mindsetExplanation of mindsetExplanation of mindsetExplanation of
+        mindsetExplanation of mindsetExplanation of mindset
+      </p>
     </div>
     <div id="sing__content" class="tab__content">
       <h2>Sing</h2>
-      <p>Explanation of sing</p>
+      <p>
+        Explanation of singExplanation of singExplanation of singExplanation of
+        singExplanation of singExplanation of singExplanation of singExplanation
+        of singExplanation of singExplanation of singExplanation of
+        singExplanation of sing
+      </p>
     </div>
     <div id="book__content" class="tab__content">
       <h2>Book</h2>
-      <p>Explanation of book</p>
+      <p>
+        Explanation of bookExplanation of bookExplanation of bookExplanation of
+        bookExplanation of bookExplanation of bookExplanation of bookExplanation
+        of bookExplanation of bookExplanation of bookExplanation of
+        bookExplanation of book
+      </p>
     </div>
     <div id="recipe__content" class="tab__content">
       <h2>recipe</h2>
-      <p>Explanation of recipe</p>
+      <p>
+        Explanation of recipeExplanation of recipeExplanation of
+        recipeExplanation of recipeExplanation of recipeExplanation of
+        recipeExplanation of recipeExplanation of recipeExplanation of
+        recipeExplanation of recipeExplanation of recipeExplanation of
+        recipeExplanation of recipeExplanation of recipeExplanation of
+        recipeExplanation of recipeExplanation of recipe
+      </p>
     </div>
   </div>
 </template>
