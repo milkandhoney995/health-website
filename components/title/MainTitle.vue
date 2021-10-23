@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>{{ title }}</h2>
+    <h2 style="vertical-align: middle">{{ title }}</h2>
   </div>
 </template>
 <script>

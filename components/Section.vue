@@ -2,11 +2,12 @@
   <div class="section">
     <div class="center">
       <div class="flexbox wrapper__explanation">
+        <!-- TODO: Aboutセクションで画像を右表示にする -->
         <div class="section__image left width__half">
-          <SectionImage :image-url="require('@/assets/images/yoga.jpg')" />
+          <SectionImage :image-url="imageUrl" />
         </div>
         <div class="section__text right width__half">
-          <MainTitle :title="'Service'" />
+          <MainTitle :title="title" />
         </div>
       </div>
     </div>
@@ -17,10 +18,20 @@ import SectionImage from '@/components/SectionImage.vue'
 import MainTitle from '@/components/title/MainTitle.vue'
 
 export default {
-  name: 'SectionService',
+  name: 'Section',
   components: {
     SectionImage,
     MainTitle,
+  },
+  props: {
+    title: {
+      type: String,
+      default: '',
+    },
+    imageUrl: {
+      type: String,
+      default: '',
+    },
   },
 }
 </script>
