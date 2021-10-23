@@ -90,6 +90,7 @@ a:hover {
   line-height: 1em;
   color: $clr-paragraph;
   font-size: 1.3rem;
+  text-align: center;
   // transform-origin: right top;
   @include respond(sp) {
     padding: 30px 0 60px;

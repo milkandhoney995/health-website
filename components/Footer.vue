@@ -1,10 +1,8 @@
 <template>
   <footer>
     <div class="footer">
-      <div class="center">
-        <div class="copyright">
-          <small>© allrights reserved utano harada</small>
-        </div>
+      <div class="copyright">
+        <small>© allrights reserved utano harada</small>
       </div>
     </div>
   </footer>

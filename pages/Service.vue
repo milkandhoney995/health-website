@@ -1,5 +1,5 @@
 <template>
-  <div class="section cubic-bezier__all">
+  <div class="section">
     <div class="center">
       <div class="flexbox wrapper__explanation">
         <div class="section__text left width--half">

@@ -52,15 +52,15 @@ const changeBackgroundColor = function () {
   const scroll = window.pageYOffset
   console.log(scroll)
 
-  if (scroll > 4000) {
+  if (scroll > 1500) {
     document.body.style.backgroundColor = '#fcfbed'
-  } else if (scroll > 3300) {
-    document.body.style.backgroundColor = '#f0edfc'
-  } else if (scroll > 2800) {
-    document.body.style.backgroundColor = '#bae3cf'
-  } else if (scroll > 2000) {
-    document.body.style.backgroundColor = '#fae8ca'
   } else if (scroll > 1000) {
+    document.body.style.backgroundColor = '#f0edfc'
+  } else if (scroll > 800) {
+    document.body.style.backgroundColor = '#bae3cf'
+  } else if (scroll > 500) {
+    document.body.style.backgroundColor = '#fae8ca'
+  } else if (scroll > 300) {
     document.body.style.backgroundColor = '#d6efff'
   } else {
     document.body.style.backgroundColor = '#facadd'
